@@ -4,38 +4,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Artifici.ai – L'intelligence artificielle au service de vos communautés</title>
+  <title>Artifici | Intelligence artificielle, NLP et aide à la décision</title>
   <meta name="description"
-    content="Artifici conçoit Commently et offre des services‑conseil en NLP pour transformer les interactions de vos communautés en décisions concrètes." />
-  <!-- Canonical : évite le contenu dupliqué -->
+    content="Artifici aide les organisations à transformer leurs conversations numériques et données textuelles en enseignements exploitables pour mieux décider." />
   <link rel="canonical" href="https://artifici.ai/">
-
-  <!-- Open Graph (partage Facebook, LinkedIn, etc.) -->
   <meta property="og:locale" content="fr_CA">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Artifici.ai – L'intelligence artificielle au service de vos communautés">
+  <meta property="og:title" content="Artifici | Intelligence artificielle, NLP et aide à la décision">
   <meta property="og:description"
-    content="Artifici conçoit Commently et offre des services d’IA pour transformer les interactions de vos communautés en décisions concrètes.">
+    content="Artifici aide les organisations à transformer leurs conversations numériques et données textuelles en enseignements exploitables pour mieux décider.">
   <meta property="og:url" content="https://artifici.ai/">
   <meta property="og:site_name" content="Artifici.ai">
   <meta property="og:image" content="https://artifici.ai/img/og-cover.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Aperçu visuel d’Artifici.ai et de Commently">
-
-  <!-- Twitter Card -->
+  <meta property="og:image:alt" content="Aperçu visuel d’Artifici.ai et de sa plateforme collaborative">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Artifici.ai – L'intelligence artificielle au service de vos communautés">
+  <meta name="twitter:title" content="Artifici | Intelligence artificielle, NLP et aide à la décision">
   <meta name="twitter:description"
-    content="Artifici conçoit Commently et offre des services d’IA pour transformer les interactions de vos communautés en décisions concrètes.">
+    content="Artifici aide les organisations à transformer leurs conversations numériques et données textuelles en enseignements exploitables pour mieux décider.">
   <meta name="twitter:image" content="https://artifici.ai/img/og-cover.jpg">
-
-  <!-- Progressive Web App / couleurs navigateur -->
   <meta name="theme-color" content="#4F46E5">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="/site.webmanifest">
-
-  <!-- Données structurées Schema.org -->
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -43,7 +34,7 @@
   "name": "Artifici.ai",
   "url": "https://artifici.ai",
   "logo": "https://artifici.ai/img/artifici_noir-300x62.png",
-  "description": "Plateforme SaaS Commently et services d’IA qui transforment les échanges communautaires en décisions exploitables.",
+  "description": "Plateforme collaborative d’aide à la décision et services d’IA/NLP pour transformer les conversations numériques en signaux exploitables.",
   "sameAs": [
     "https://www.linkedin.com/company/artificiai",
     "https://twitter.com/ArtificiAI"
@@ -82,298 +73,237 @@
     };
   </script>
   <script defer>
-    // thème clair / sombre
+    const translations = {
+      fr: {
+        metaTitle: "Artifici | Intelligence artificielle, NLP et aide à la décision",
+        metaDescription: "Artifici aide les organisations à transformer leurs conversations numériques et données textuelles en enseignements exploitables pour mieux décider.",
+        navEntreprise: "L’entreprise", navProduit: "Produit", navServices: "Services", navEquipe: "L’équipe", navPartenaires: "Partenaires", navContact: "Contact",
+        heroTitle: "Transformez vos conversations numériques en décisions éclairées",
+        heroSubtitle: "Artifici aide les organisations à analyser leurs commentaires, leurs échanges et leurs données textuelles pour faire émerger les signaux utiles à la décision.",
+        heroCtaPrimary: "Découvrir la plateforme", heroCtaSecondary: "Discuter de votre projet",
+        entrepriseTitle: "L’entreprise",
+        entrepriseBody: "Artifici est spécialisée en intelligence artificielle appliquée et en traitement du langage naturel. Nous aidons les organisations à comprendre ce qui se dit dans leurs espaces numériques afin d’éclairer leurs stratégies, leurs services et leurs décisions.",
+        pourquoiTitle: "Pourquoi Artifici ?",
+        p1: "Compréhension fine des conversations", p2: "Décisions mieux informées", p3: "Déploiement adapté aux réalités organisationnelles",
+        plateformeTitle: "Notre plateforme",
+        plateformeBody: "Une plateforme collaborative d’aide à la décision conçue pour valoriser l’intelligence collective, structurer les options, suivre les objections et conserver l’historique des décisions.",
+        b1: "Performance décisionnelle accrue", b2: "Intelligence collective valorisée", b3: "Décisions traçables et historiques",
+        produitCta: "Découvrir la plateforme",
+        servicesTitle: "Services-conseil en IA et NLP",
+        servicesBody: "De l’audit au déploiement, nous accompagnons vos équipes pour transformer commentaires, conversations et données textuelles en enseignements exploitables.",
+        s1t: "Audit et diagnostic", s1d: "Évaluation de vos données, de vos usages et des opportunités prioritaires.",
+        s2t: "Prototypes rapides", s2d: "Validation rapide de cas d’usage à fort impact métier.",
+        s3t: "Fine-tuning et MLOps", s3d: "Adaptation de modèles, industrialisation et déploiement sécurisé.",
+        s4t: "Formation et transfert", s4d: "Montée en compétence de vos équipes techniques et métiers.",
+        servicesCta: "Discuter de votre projet",
+        equipeTitle: "L’équipe", cofounders: "Cofondateurs",
+        equipeBody: "Trois cofondateurs passionnés par l’intelligence artificielle, les données et l’entrepreneuriat portent la vision d’Artifici : mettre au premier plan ce que les gens ont en commun.",
+        role1: "Cofondateur, PDG", role2: "Cofondateur, Scientifique de données", role3: "Cofondateur, Scientifique de données",
+        partenairesTitle: "Nos partenaires",
+        contactTitle: "Nous contacter",
+        contactBody: "Une question, une demande ou un projet à nous confier ? Communiquez avec nous pour discuter de vos besoins.",
+        contactCta: "Remplir le formulaire",
+        footer: "© 2026 Artifici. Tous droits réservés.",
+        themeLabel: "Basculer le thème", menuLabel: "Menu"
+      },
+      en: {
+        metaTitle: "Artifici | AI, NLP and collaborative decision support",
+        metaDescription: "Artifici helps organizations turn digital conversations and textual data into actionable insights for better decision-making.",
+        navEntreprise: "Company", navProduit: "Product", navServices: "Services", navEquipe: "Team", navPartenaires: "Partners", navContact: "Contact",
+        heroTitle: "Turn digital conversations into better decisions",
+        heroSubtitle: "Artifici helps organizations analyze comments, discussions and textual data to surface the signals that matter for decision-making.",
+        heroCtaPrimary: "Discover the platform", heroCtaSecondary: "Discuss your project",
+        entrepriseTitle: "Company",
+        entrepriseBody: "Artifici specializes in applied artificial intelligence and natural language processing. We help organizations understand what is being said across their digital spaces in order to inform strategy, services and decisions.",
+        pourquoiTitle: "Why Artifici?",
+        p1: "Deep understanding of conversations", p2: "Better-informed decisions", p3: "Deployment aligned with organizational realities",
+        plateformeTitle: "Our platform",
+        plateformeBody: "A collaborative decision-support platform designed to leverage collective intelligence, structure options, track objections and preserve decision history.",
+        b1: "Improved decision performance", b2: "Collective intelligence made visible", b3: "Traceable and documented decisions",
+        produitCta: "Discover the platform",
+        servicesTitle: "AI and NLP consulting",
+        servicesBody: "From audit to deployment, we help teams transform comments, discussions and textual data into actionable insights.",
+        s1t: "Audit and diagnosis", s1d: "Assessment of your data, workflows and high-priority opportunities.",
+        s2t: "Rapid prototypes", s2d: "Fast validation of high-impact business use cases.",
+        s3t: "Fine-tuning and MLOps", s3d: "Model adaptation, industrialization and secure deployment.",
+        s4t: "Training and knowledge transfer", s4d: "Practical enablement for technical and business teams.",
+        servicesCta: "Discuss your project",
+        equipeTitle: "Team", cofounders: "Co-founders",
+        equipeBody: "Three co-founders passionate about artificial intelligence, data and entrepreneurship lead Artifici’s vision: bringing forward what people have in common.",
+        role1: "Co-founder, CEO", role2: "Co-founder, Data Scientist", role3: "Co-founder, Data Scientist",
+        partenairesTitle: "Partners",
+        contactTitle: "Contact us",
+        contactBody: "Have a question, a request or a project to discuss? Contact us to explore how we can help.",
+        contactCta: "Fill out the form",
+        footer: "© 2026 Artifici. All rights reserved.",
+        themeLabel: "Toggle theme", menuLabel: "Menu"
+      }
+    };
+
+    const metaDesc = document.querySelector('meta[name="description"]');
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    const twTitle = document.querySelector('meta[name="twitter:title"]');
+    const twDesc = document.querySelector('meta[name="twitter:description"]');
+
     if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       document.documentElement.classList.add('dark');
     }
+
+    function applyLanguage(lang) {
+      const t = translations[lang] || translations.fr;
+      document.documentElement.lang = lang;
+      document.title = t.metaTitle;
+      metaDesc.setAttribute('content', t.metaDescription);
+      ogTitle.setAttribute('content', t.metaTitle);
+      ogDesc.setAttribute('content', t.metaDescription);
+      twTitle.setAttribute('content', t.metaTitle);
+      twDesc.setAttribute('content', t.metaDescription);
+      document.querySelectorAll('[data-i18n]').forEach((el) => {
+        const key = el.getAttribute('data-i18n');
+        if (t[key]) el.textContent = t[key];
+      });
+      document.getElementById('lang-fr').classList.toggle('bg-primary-500', lang === 'fr');
+      document.getElementById('lang-fr').classList.toggle('text-white', lang === 'fr');
+      document.getElementById('lang-en').classList.toggle('bg-primary-500', lang === 'en');
+      document.getElementById('lang-en').classList.toggle('text-white', lang === 'en');
+      localStorage.setItem('lang', lang);
+    }
+
+    function setLang(lang) { applyLanguage(lang); }
     function toggleTheme() {
       document.documentElement.classList.toggle('dark');
       localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
     }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const lang = localStorage.getItem('lang') || 'fr';
+      applyLanguage(lang);
+      const mb = document.getElementById('mobile-btn');
+      const mm = document.getElementById('mobile-menu');
+      mb.addEventListener('click', () => mm.classList.toggle('hidden'));
+    });
   </script>
 </head>
 
 <body class="antialiased bg-white dark:bg-primary-900 text-primary-900 dark:text-primary-50">
-  <!-- Header -->
-  <header
-    class="fixed inset-x-0 top-0 z-50 backdrop-blur bg-white/70 dark:bg-primary-900/70 border-b border-primary-200 dark:border-primary-800">
-    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+  <header class="fixed inset-x-0 top-0 z-50 backdrop-blur bg-white/85 dark:bg-primary-900/80 border-b border-primary-200 dark:border-primary-800">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 py-3 sm:py-4 gap-3">
       <a href="#" class="text-xl font-extrabold tracking-tight">
-        <!-- Logo clair (affiché en mode light) -->
         <img src="img/artifici_noir-300x62.png" alt="Artifici.ai" width="150" height="31" class="block dark:hidden">
-
-        <!-- Logo foncé (affiché en mode dark) -->
         <img src="img/artifici_blanc-300x62.png" alt="Artifici.ai" width="150" height="31" class="hidden dark:block">
       </a>
-      <nav class="hidden md:flex space-x-8 text-sm font-medium">
-        <a href="#entreprise" class="hover:text-primary-500">L’entreprise</a>
-        <a href="#produit" class="hover:text-primary-500">Projet</a>
-        <a href="#services" class="hover:text-primary-500">Services</a>
-        <a href="#equipe" class="hover:text-primary-500">L’équipe</a>
-        <a href="#partenaires" class="hover:text-primary-500">Partenaires</a>
-        <a href="#contact" class="hover:text-primary-500">Contact</a>
+      <nav class="hidden md:flex space-x-7 text-sm font-medium">
+        <a href="#entreprise" class="hover:text-primary-500" data-i18n="navEntreprise">L’entreprise</a>
+        <a href="#produit" class="hover:text-primary-500" data-i18n="navProduit">Produit</a>
+        <a href="#services" class="hover:text-primary-500" data-i18n="navServices">Services</a>
+        <a href="#equipe" class="hover:text-primary-500" data-i18n="navEquipe">L’équipe</a>
+        <a href="#partenaires" class="hover:text-primary-500" data-i18n="navPartenaires">Partenaires</a>
+        <a href="#contact" class="hover:text-primary-500" data-i18n="navContact">Contact</a>
       </nav>
-      <div class="flex items-center space-x-4">
-        <button onclick="toggleTheme()" aria-label="Basculer le thème"
-          class="p-2 rounded-full hover:bg-primary-100 dark:hover:bg-primary-800 transition">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M12 3v1m0 16v1m9-9h1M3 12H2m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M12 5a7 7 0 000 14 7 7 0 000-14z" />
-          </svg>
-        </button>
-        <button id="mobile-btn" class="md:hidden p-2 rounded-lg hover:bg-primary-100 dark:hover:bg-primary-800"
-          aria-label="Menu">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current" fill="none" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
-          </svg>
+      <div class="flex items-center gap-2 sm:gap-3">
+        <div class="inline-flex rounded-lg border border-primary-200 dark:border-primary-700 p-1 text-xs sm:text-sm">
+          <button id="lang-fr" onclick="setLang('fr')" class="px-2 py-1 rounded-md">FR</button>
+          <button id="lang-en" onclick="setLang('en')" class="px-2 py-1 rounded-md">EN</button>
+        </div>
+        <button onclick="toggleTheme()" data-i18n="themeLabel" aria-label="Basculer le thème" class="p-2 rounded-full hover:bg-primary-100 dark:hover:bg-primary-800 transition">◐</button>
+        <button id="mobile-btn" class="md:hidden p-2 rounded-lg hover:bg-primary-100 dark:hover:bg-primary-800" aria-label="Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" /></svg>
         </button>
       </div>
     </div>
-    <div id="mobile-menu" class="hidden md:hidden flex-col space-y-4 px-6 pb-6 text-sm font-medium">
-      <a href="#entreprise" class="block">L’entreprise</a>
-      <a href="#produit" class="block">Produit</a>
-      <a href="#services" class="block">Services</a>
-      <a href="#equipe" class="block">L’équipe</a>
-      <a href="#partenaires" class="block">Partenaires</a>
-      <a href="#contact" class="block">Contact</a>
+    <div id="mobile-menu" class="hidden md:hidden flex-col space-y-3 px-6 pb-5 text-sm font-medium bg-white dark:bg-primary-900 border-t border-primary-100 dark:border-primary-800">
+      <a href="#entreprise" class="block" data-i18n="navEntreprise">L’entreprise</a>
+      <a href="#produit" class="block" data-i18n="navProduit">Produit</a>
+      <a href="#services" class="block" data-i18n="navServices">Services</a>
+      <a href="#equipe" class="block" data-i18n="navEquipe">L’équipe</a>
+      <a href="#partenaires" class="block" data-i18n="navPartenaires">Partenaires</a>
+      <a href="#contact" class="block" data-i18n="navContact">Contact</a>
     </div>
-    <script>
-      const mb = document.getElementById('mobile-btn');
-      const mm = document.getElementById('mobile-menu');
-      mb.addEventListener('click', () => mm.classList.toggle('hidden'));
-    </script>
   </header>
 
   <main class="pt-24">
-    <!-- Hero -->
-    <section class="relative overflow-hidden py-24">
-      <div class="absolute inset-0 -z-10 select-none">
-        <div class="h-full w-full bg-gradient-to-br from-primary-50 to-white dark:from-primary-800 dark:to-primary-900">
-        </div>
-        <div
-          class="absolute -top-32 -left-32 h-96 w-96 bg-primary-100 dark:bg-primary-900 opacity-20 rounded-full blur-3xl">
-        </div>
-      </div>
-      <div class="max-w-3xl mx-auto text-center px-6">
-        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
-          Analysez vos <span class="text-amber-500">espaces numériques</span>.<br>
-          Découvrez les <span class="underline decoration-amber-500">opinions</span> de vos équipes.
-        </h1>
-        <p class="mt-8 text-lg md:text-2xl text-primary-600 dark:text-primary-300">Notre plateforme convertit chaque
-          commentaire en insight mesurable pour que vos décisions résonnent avec votre mission.</p>
+    <section class="relative overflow-hidden py-20 md:py-24">
+      <div class="absolute inset-0 -z-10 select-none"><div class="h-full w-full bg-gradient-to-br from-primary-50 to-white dark:from-primary-800 dark:to-primary-900"></div></div>
+      <div class="max-w-4xl mx-auto text-center px-6">
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-i18n="heroTitle"></h1>
+        <p class="mt-8 text-lg md:text-2xl text-primary-700 dark:text-primary-300" data-i18n="heroSubtitle"></p>
         <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-          <a href="#produit"
-            class="px-8 py-3 rounded-lg bg-primary-500 text-white font-medium hover:bg-primary-600 transition shadow-lg">Découvrir
-            notre projet</a>
-          <a href="#contact"
-            class="px-8 py-3 rounded-lg border border-primary-300 dark:border-primary-700 hover:bg-primary-100 dark:hover:bg-primary-800 transition">Contactez‑nous</a>
+          <a href="#produit" class="px-8 py-3 rounded-lg bg-primary-500 text-white font-medium hover:bg-primary-600 transition shadow-lg" data-i18n="heroCtaPrimary"></a>
+          <a href="#contact" class="px-8 py-3 rounded-lg border border-primary-300 dark:border-primary-700 hover:bg-primary-100 dark:hover:bg-primary-800 transition" data-i18n="heroCtaSecondary"></a>
         </div>
       </div>
     </section>
 
-    <!-- Entreprise -->
-    <section id="entreprise" class="max-w-4xl mx-auto px-6 py-24">
-      <h2 class="text-3xl font-bold mb-6 text-center">L’entreprise</h2>
-      <p class="text-lg text-primary-700 dark:text-primary-300 leading-relaxed text-center">
-        Spécialisée en traitement du langage naturel, <strong>Artifici</strong> transforme et met en valeur les données
-        de vos espaces numériques afin d’éclairer vos prises de décisions. Nous croyons qu’une compréhension fine des
-        conversations en ligne est le moteur d’une stratégie durable et inclusive.
-      </p>
+    <section id="entreprise" class="max-w-6xl mx-auto px-6 py-20">
+      <h2 class="text-3xl font-bold mb-5 text-center" data-i18n="entrepriseTitle"></h2>
+      <p class="text-lg text-primary-700 dark:text-primary-300 leading-relaxed text-center max-w-4xl mx-auto" data-i18n="entrepriseBody"></p>
+      <h3 class="text-2xl font-semibold text-center mt-12 mb-6" data-i18n="pourquoiTitle"></h3>
+      <div class="grid md:grid-cols-3 gap-5">
+        <div class="p-6 rounded-2xl bg-primary-50 dark:bg-primary-800 border border-primary-100 dark:border-primary-700" data-i18n="p1"></div>
+        <div class="p-6 rounded-2xl bg-primary-50 dark:bg-primary-800 border border-primary-100 dark:border-primary-700" data-i18n="p2"></div>
+        <div class="p-6 rounded-2xl bg-primary-50 dark:bg-primary-800 border border-primary-100 dark:border-primary-700" data-i18n="p3"></div>
+      </div>
     </section>
 
-    <!-- Produit -->
-    <section id="produit" class="bg-primary-50 dark:bg-primary-800 py-24">
+    <section id="produit" class="bg-primary-50 dark:bg-primary-800 py-20">
       <div class="max-w-7xl mx-auto px-6">
-        <div class="flex items-center justify-center gap-4 mb-8">
-          <h2 class="text-3xl font-bold">Notre projet</h2>
+        <h2 class="text-3xl font-bold text-center mb-5" data-i18n="plateformeTitle"></h2>
+        <p class="text-lg text-center text-primary-700 dark:text-primary-300 max-w-4xl mx-auto mb-10" data-i18n="plateformeBody"></p>
+        <div class="grid md:grid-cols-3 gap-6 mb-10">
+          <div class="p-7 rounded-2xl bg-white dark:bg-primary-900 border dark:border-primary-700 shadow-sm" data-i18n="b1"></div>
+          <div class="p-7 rounded-2xl bg-white dark:bg-primary-900 border dark:border-primary-700 shadow-sm" data-i18n="b2"></div>
+          <div class="p-7 rounded-2xl bg-white dark:bg-primary-900 border dark:border-primary-700 shadow-sm" data-i18n="b3"></div>
         </div>
-        <div class="flex items-center justify-center gap-4 mb-8">
-          <h2 class="text-3xl font-bold text-primary-700 dark:text-primary-300">Mettre en oeuvre d'une plateforme
-            collaborative d'aide à la décision.</h2>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-10 mb-12">
-          <!-- carte 1 -->
-          <div
-            class="group border dark:border-primary-700 p-8 rounded-2xl shadow-sm hover:shadow-md transition bg-white dark:bg-primary-900">
-            <h3 class="text-xl font-semibold mb-2 group-hover:text-primary-500">Performance décisionnelle accrue
-            </h3>
-            <ul class="list-disc list-inside text-primary-600 dark:text-primary-400 space-y-1">
-              <li>Amélioration, accroissement, efficience de la performance décisionnelle</li>
-              <li>Réduction du temps en réunion</li>
-              <li>Suivi des décisions en continu</li>
-            </ul>
-          </div>
-          <!-- carte 2 -->
-          <div
-            class="group border dark:border-primary-700 p-8 rounded-2xl shadow-sm hover:shadow-md transition bg-white dark:bg-primary-900">
-            <h3 class="text-xl font-semibold mb-2 group-hover:text-primary-500">Intelligence collective valorisée
-            </h3>
-            <ul class="list-disc list-inside text-primary-600 dark:text-primary-400 space-y-1">
-              <li>Mettre en valeur l’intelligence collaborative de vos équipes</li>
-              <li>Rapprochement des paliers de décision</li>
-              <li>Transparence du processus décisionnel</li>
-            </ul>
-          </div>
-          <!-- carte 3 -->
-          <div
-            class="group border dark:border-primary-700 p-8 rounded-2xl shadow-sm hover:shadow-md transition bg-white dark:bg-primary-900">
-            <h3 class="text-xl font-semibold mb-2 group-hover:text-primary-500">Décisions traçables et historiques
-            </h3>
-            <ul class="list-disc list-inside text-primary-600 dark:text-primary-400 space-y-1">
-              <li>Traçabilité des décisions</li>
-              <li>Historisation des décisions</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Bouton vers le formulaire -->
-        <div class="text-center">
-          <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=WnCDb8h7N0iDQf3lxLt-ZJmnwjJlQ-FKgwnmMO-pVm9UREtBUklOVjJONjFDWlQxVjNURUZFWDVPTS4u"
-            target="_blank" rel="noopener noreferrer"
-            class="px-8 py-3 rounded-lg bg-primary-500 text-white font-medium hover:bg-primary-600 transition shadow-lg">
-            En apprendre plus sur notre projet
-          </a>
-        </div>
+        <div class="text-center"><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=WnCDb8h7N0iDQf3lxLt-ZJmnwjJlQ-FKgwnmMO-pVm9UREtBUklOVjJONjFDWlQxVjNURUZFWDVPTS4u" target="_blank" rel="noopener noreferrer" class="px-8 py-3 rounded-lg bg-primary-500 text-white font-medium hover:bg-primary-600 transition shadow-lg" data-i18n="produitCta"></a></div>
       </div>
     </section>
 
-    <!-- Services conseil NLP -->
-    <section id="services" class="py-24">
+    <section id="services" class="py-20">
       <div class="max-w-7xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-4">Services‑conseil en IA &amp; NLP</h2>
-        <p class="max-w-2xl mx-auto text-center text-lg text-primary-700 dark:text-primary-300 mb-12">De l’audit de vos
-          données textuelles jusqu’au déploiement, notre équipe vous accompagne à chaque étape pour maximiser la valeur
-          de vos conversations.</p>
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          <div
-            class="group p-6 rounded-2xl bg-white dark:bg-primary-900 border dark:border-primary-700 shadow-sm hover:shadow-md transition">
-            <h3 class="text-xl font-semibold mb-2 group-hover:text-primary-500">Audit &amp; diagnostic</h3>
-            <p class="text-sm text-primary-600 dark:text-primary-400">Cartographie de vos sources de données, évaluation
-              qualité linguistique, identification des cas d’usage à fort ROI.</p>
-          </div>
-          <div
-            class="group p-6 rounded-2xl bg-white dark:bg-primary-900 border dark:border-primary-700 shadow-sm hover:shadow-md transition">
-            <h3 class="text-xl font-semibold mb-2 group-hover:text-primary-500">Prototypes rapides</h3>
-            <p class="text-sm text-primary-600 dark:text-primary-400">POC en quelques semaines : extraction d’entités,
-              classification, sentiment, RAG.</p>
-          </div>
-          <div
-            class="group p-6 rounded-2xl bg-white dark:bg-primary-900 border dark:border-primary-700 shadow-sm hover:shadow-md transition">
-            <h3 class="text-xl font-semibold mb-2 group-hover:text-primary-500">Fine‑tuning &amp; MLOps</h3>
-            <p class="text-sm text-primary-600 dark:text-primary-400">Modèles sur mesure, optimisation GPU/CPU et
-              déploiement sécurisé cloud ou on‑prem.</p>
-          </div>
-          <div
-            class="group p-6 rounded-2xl bg-white dark:bg-primary-900 border dark:border-primary-700 shadow-sm hover:shadow-md transition">
-            <h3 class="text-xl font-semibold mb-2 group-hover:text-primary-500">Formation &amp; transfert</h3>
-            <p class="text-sm text-primary-600 dark:text-primary-400">Ateliers pratiques pour autonomiser vos équipes
-              data, dev et métiers.</p>
-          </div>
+        <h2 class="text-3xl font-bold text-center mb-4" data-i18n="servicesTitle"></h2>
+        <p class="max-w-2xl mx-auto text-center text-lg text-primary-700 dark:text-primary-300 mb-12" data-i18n="servicesBody"></p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div class="p-6 rounded-2xl bg-white dark:bg-primary-900 border dark:border-primary-700 shadow-sm"><h3 class="text-xl font-semibold mb-2" data-i18n="s1t"></h3><p class="text-sm text-primary-600 dark:text-primary-400" data-i18n="s1d"></p></div>
+          <div class="p-6 rounded-2xl bg-white dark:bg-primary-900 border dark:border-primary-700 shadow-sm"><h3 class="text-xl font-semibold mb-2" data-i18n="s2t"></h3><p class="text-sm text-primary-600 dark:text-primary-400" data-i18n="s2d"></p></div>
+          <div class="p-6 rounded-2xl bg-white dark:bg-primary-900 border dark:border-primary-700 shadow-sm"><h3 class="text-xl font-semibold mb-2" data-i18n="s3t"></h3><p class="text-sm text-primary-600 dark:text-primary-400" data-i18n="s3d"></p></div>
+          <div class="p-6 rounded-2xl bg-white dark:bg-primary-900 border dark:border-primary-700 shadow-sm"><h3 class="text-xl font-semibold mb-2" data-i18n="s4t"></h3><p class="text-sm text-primary-600 dark:text-primary-400" data-i18n="s4d"></p></div>
         </div>
-        <div class="text-center">
-          <a href="#contact"
-            class="inline-block px-8 py-3 rounded-lg bg-primary-500 text-white font-medium hover:bg-primary-600 transition shadow-lg">Discutons
-            de votre projet NLP</a>
-        </div>
+        <div class="text-center"><a href="#contact" class="inline-block px-8 py-3 rounded-lg bg-primary-500 text-white font-medium hover:bg-primary-600 transition shadow-lg" data-i18n="servicesCta"></a></div>
       </div>
     </section>
 
-    <!-- Équipe -->
-    <section id="equipe" class="bg-primary-50 dark:bg-primary-800 py-24">
-      <h2 class="text-3xl font-bold text-center mb-12">L’équipe</h2>
-      <!-- Cofondateurs -->
-      <div class="mb-16">
-        <h3 class="text-2xl font-semibold mb-4 text-primary-600 dark:text-primary-300 text-center">Cofondateurs</h3>
-        <p class="max-w-3xl mx-auto text-center text-lg text-primary-700 dark:text-primary-300">
-          Trois passionnés d’intelligence artificielle et d’entrepreneuriat portent la vision d’Artifici : Mettre en avant plan ce que les gens ont en commun.
-        </p>
-        <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto text-center">
-          <div>
-            <h4 class="text-xl font-bold text-primary-800 dark:text-primary-100">Francis Couture</h4>
-            <p class="text-primary-600 dark:text-primary-300">Cofondateur, PDG</p>
-          </div>
-          <div>
-            <h4 class="text-xl font-bold text-primary-800 dark:text-primary-100">Mikaël Gélinas, M. Sc.</h4>
-            <p class="text-primary-600 dark:text-primary-300">Cofondateur, Scientifique de données</p>
-          </div>
-          <div>
-            <h4 class="text-xl font-bold text-primary-800 dark:text-primary-100">Olivier Bloch, M. Sc.</h4>
-            <p class="text-primary-600 dark:text-primary-300">Cofondateur, Scientifique de données</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Équipe multidisciplinaire -->
-      <div class="mb-12">
-        <h3 class="text-2xl font-semibold mb-4 text-primary-600 dark:text-primary-300 text-center">Notre équipe
-          multidisciplinaire</h3>
-        <p class="max-w-4xl mx-auto text-center text-lg text-primary-700 dark:text-primary-300">Ingénieurs logiciel,
-          scientifiques des données, spécialistes UX, créatifs marketing et experts cloud travaillent main dans la main
-          pour transformer vos données en insights actionnables.</p>
-      </div>
-      <div class="text-center">
-        <a href="#contact"
-          class="inline-block px-8 py-3 rounded-lg bg-primary-500 text-white font-medium hover:bg-primary-600 transition shadow-lg">Envoyez
-          votre candidature spontanée</a>
+    <section id="equipe" class="bg-primary-50 dark:bg-primary-800 py-20">
+      <h2 class="text-3xl font-bold text-center mb-6" data-i18n="equipeTitle"></h2>
+      <h3 class="text-2xl font-semibold mb-4 text-primary-600 dark:text-primary-300 text-center" data-i18n="cofounders"></h3>
+      <p class="max-w-3xl mx-auto text-center text-lg text-primary-700 dark:text-primary-300 mb-8" data-i18n="equipeBody"></p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto text-center px-6">
+        <div><h4 class="text-xl font-bold">Francis Couture</h4><p data-i18n="role1"></p></div>
+        <div><h4 class="text-xl font-bold">Mikaël Gélinas, M. Sc.</h4><p data-i18n="role2"></p></div>
+        <div><h4 class="text-xl font-bold">Olivier Bloch, M. Sc.</h4><p data-i18n="role3"></p></div>
       </div>
     </section>
 
-    <!-- Partenaires -->
-    <section id="partenaires" class="max-w-7xl mx-auto px-6 py-24">
-      <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-12 text-primary-800 dark:text-white">Nos partenaires</h2>
-        <div
-          class="grid sm:grid-cols-2 md:grid-cols-4 gap-8 text-center text-lg font-medium text-primary-700 dark:text-primary-200">
-
-          <div>
-            <div class="font-semibold">Impakt Scientifik</div>
-            <div class="text-sm font-normal">Graphisme & illustration scientifique</div>
-          </div>
-
-          <div>
-            <div class="font-semibold">Nordet &amp; co</div>
-            <div class="text-sm font-normal">Stratégie, design et marketing</div>
-          </div>
-
-          <div>
-            <div class="font-semibold">Neuraxio</div>
-            <div class="text-sm font-normal">Services d’intelligence artificielle</div>
-          </div>
-
-          <div>
-            <div class="font-semibold">Mitacs</div>
-            <div class="text-sm font-normal">Programme Accélération</div>
-          </div>
-
-        </div>
+    <section id="partenaires" class="max-w-7xl mx-auto px-6 py-20">
+      <h2 class="text-3xl font-bold text-center mb-12" data-i18n="partenairesTitle"></h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8 text-center text-lg font-medium text-primary-700 dark:text-primary-200">
+        <div><div class="font-semibold">Impakt Scientifik</div></div>
+        <div><div class="font-semibold">Nordet &amp; co</div></div>
+        <div><div class="font-semibold">Neuraxio</div></div>
+        <div><div class="font-semibold">Mitacs</div></div>
       </div>
     </section>
 
-
-    <!-- Contact -->
-
-    <section id="contact" class="bg-primary-50 dark:bg-primary-800 py-24">
+    <section id="contact" class="bg-primary-50 dark:bg-primary-800 py-20">
       <div class="max-w-4xl mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold mb-6 text-primary-800 dark:text-white">Contactez-nous</h2>
-        <p class="text-lg text-primary-700 dark:text-primary-300 mb-8">
-          Une question, une demande ou un projet à nous confier ? Cliquez ci-dessous pour accéder à notre formulaire.
-        </p>
-        <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=WnCDb8h7N0iDQf3lxLt-ZJmnwjJlQ-FKgwnmMO-pVm9UREtBUklOVjJONjFDWlQxVjNURUZFWDVPTS4u"
-          target="_blank" rel="noopener noreferrer"
-          class="px-8 py-3 rounded-lg bg-primary-500 text-white font-medium hover:bg-primary-600 transition shadow-lg">
-          Remplir le formulaire
-        </a>
+        <h2 class="text-3xl font-bold mb-6" data-i18n="contactTitle"></h2>
+        <p class="text-lg text-primary-700 dark:text-primary-300 mb-8" data-i18n="contactBody"></p>
+        <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=WnCDb8h7N0iDQf3lxLt-ZJmnwjJlQ-FKgwnmMO-pVm9UREtBUklOVjJONjFDWlQxVjNURUZFWDVPTS4u" target="_blank" rel="noopener noreferrer" class="px-8 py-3 rounded-lg bg-primary-500 text-white font-medium hover:bg-primary-600 transition shadow-lg" data-i18n="contactCta"></a>
       </div>
     </section>
-
   </main>
 
-  <!-- Footer -->
-  <footer
-    class="py-8 border-t border-primary-200 dark:border-primary-800 text-center text-sm text-primary-500 dark:text-primary-600">
-    © 2025 Artifici. Tous droits réservés.
-  </footer>
+  <footer class="py-8 border-t border-primary-200 dark:border-primary-800 text-center text-sm text-primary-500 dark:text-primary-600" data-i18n="footer"></footer>
 </body>
 
 </html>
