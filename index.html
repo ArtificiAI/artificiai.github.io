@@ -84,7 +84,9 @@
         entrepriseTitle: "L’entreprise",
         entrepriseBody: "Artifici est spécialisée en intelligence artificielle appliquée et en traitement du langage naturel. Nous aidons les organisations à comprendre ce qui se dit dans leurs espaces numériques afin d’éclairer leurs stratégies, leurs services et leurs décisions.",
         pourquoiTitle: "Pourquoi Artifici ?",
-        p1: "Compréhension fine des conversations", p2: "Décisions mieux informées", p3: "Déploiement adapté aux réalités organisationnelles",
+        p1: "Compréhension fine des conversations", p1d: "Analyse sémantique et contextuelle pour révéler les signaux faibles.", p1i: "🧠",
+        p2: "Décisions mieux informées", p2d: "Tableaux clairs et priorisation des options selon les faits observés.", p2i: "📊",
+        p3: "Déploiement adapté aux réalités organisationnelles", p3d: "Méthodes pragmatiques alignées sur vos processus, vos équipes et vos contraintes.", p3i: "⚙️",
         plateformeTitle: "Notre plateforme",
         plateformeBody: "Une plateforme collaborative d’aide à la décision conçue pour valoriser l’intelligence collective, structurer les options, suivre les objections et conserver l’historique des décisions.",
         b1: "Performance décisionnelle accrue", b1l1: "Amélioration de la qualité et de l’efficience décisionnelle", b1l2: "Réduction du temps en réunion", b1l3: "Suivi des décisions en continu",
@@ -121,7 +123,9 @@
         entrepriseTitle: "Company",
         entrepriseBody: "Artifici specializes in applied artificial intelligence and natural language processing. We help organizations understand what is being said across their digital spaces in order to inform strategy, services and decisions.",
         pourquoiTitle: "Why Artifici?",
-        p1: "Deep understanding of conversations", p2: "Better-informed decisions", p3: "Deployment aligned with organizational realities",
+        p1: "Deep understanding of conversations", p1d: "Semantic and contextual analysis to surface weak but meaningful signals.", p1i: "🧠",
+        p2: "Better-informed decisions", p2d: "Clear dashboards and option prioritization based on observed evidence.", p2i: "📊",
+        p3: "Deployment aligned with organizational realities", p3d: "Pragmatic methods aligned with your processes, teams and constraints.", p3i: "⚙️",
         plateformeTitle: "Our platform",
         plateformeBody: "A collaborative decision-support platform designed to leverage collective intelligence, structure options, track objections and preserve decision history.",
         b1: "Improved decision performance", b1l1: "Higher decision quality and efficiency", b1l2: "Reduced meeting time", b1l3: "Continuous decision follow-up",
@@ -256,11 +260,25 @@
     <section id="entreprise" class="max-w-6xl mx-auto px-6 py-20">
       <h2 class="text-3xl font-bold mb-5 text-center" data-i18n="entrepriseTitle"></h2>
       <p class="text-lg text-primary-700 dark:text-primary-300 leading-relaxed text-center max-w-4xl mx-auto" data-i18n="entrepriseBody"></p>
-      <h3 class="text-2xl font-semibold text-center mt-12 mb-6" data-i18n="pourquoiTitle"></h3>
-      <div class="grid md:grid-cols-3 gap-5">
-        <div class="p-6 rounded-2xl bg-primary-50 dark:bg-primary-800 border border-primary-100 dark:border-primary-700" data-i18n="p1"></div>
-        <div class="p-6 rounded-2xl bg-primary-50 dark:bg-primary-800 border border-primary-100 dark:border-primary-700" data-i18n="p2"></div>
-        <div class="p-6 rounded-2xl bg-primary-50 dark:bg-primary-800 border border-primary-100 dark:border-primary-700" data-i18n="p3"></div>
+      <div class="mt-14 rounded-3xl bg-gradient-to-br from-primary-50 to-white dark:from-primary-800 dark:to-primary-900 border border-primary-100 dark:border-primary-700 p-8 md:p-10">
+        <h3 class="text-2xl md:text-3xl font-bold text-center mb-8" data-i18n="pourquoiTitle"></h3>
+        <div class="grid md:grid-cols-3 gap-5 md:gap-6">
+          <article class="p-6 rounded-2xl bg-white/90 dark:bg-primary-900 border border-primary-100 dark:border-primary-700 shadow-sm">
+            <div class="text-2xl mb-3" data-i18n="p1i"></div>
+            <h4 class="text-xl font-semibold text-primary-800 dark:text-primary-50 mb-2" data-i18n="p1"></h4>
+            <p class="text-primary-600 dark:text-primary-300" data-i18n="p1d"></p>
+          </article>
+          <article class="p-6 rounded-2xl bg-white/90 dark:bg-primary-900 border border-primary-100 dark:border-primary-700 shadow-sm">
+            <div class="text-2xl mb-3" data-i18n="p2i"></div>
+            <h4 class="text-xl font-semibold text-primary-800 dark:text-primary-50 mb-2" data-i18n="p2"></h4>
+            <p class="text-primary-600 dark:text-primary-300" data-i18n="p2d"></p>
+          </article>
+          <article class="p-6 rounded-2xl bg-white/90 dark:bg-primary-900 border border-primary-100 dark:border-primary-700 shadow-sm">
+            <div class="text-2xl mb-3" data-i18n="p3i"></div>
+            <h4 class="text-xl font-semibold text-primary-800 dark:text-primary-50 mb-2" data-i18n="p3"></h4>
+            <p class="text-primary-600 dark:text-primary-300" data-i18n="p3d"></p>
+          </article>
+        </div>
       </div>
     </section>
 
