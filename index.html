@@ -177,6 +177,10 @@
         const key = el.getAttribute('data-i18n');
         if (t[key]) el.textContent = t[key];
       });
+      document.querySelectorAll('[data-i18n-aria]').forEach((el) => {
+        const key = el.getAttribute('data-i18n-aria');
+        if (t[key]) el.setAttribute('aria-label', t[key]);
+      });
       document.getElementById('lang-fr').classList.toggle('bg-primary-500', lang === 'fr');
       document.getElementById('lang-fr').classList.toggle('text-white', lang === 'fr');
       document.getElementById('lang-en').classList.toggle('bg-primary-500', lang === 'en');
@@ -220,7 +224,7 @@
           <button id="lang-fr" onclick="setLang('fr')" class="px-2 py-1 rounded-md">FR</button>
           <button id="lang-en" onclick="setLang('en')" class="px-2 py-1 rounded-md">EN</button>
         </div>
-        <button onclick="toggleTheme()" data-i18n="themeLabel" aria-label="Basculer le thème" class="p-2 rounded-full hover:bg-primary-100 dark:hover:bg-primary-800 transition">◐</button>
+        <button onclick="toggleTheme()" data-i18n-aria="themeLabel" aria-label="Basculer le thème" class="p-2 rounded-full hover:bg-primary-100 dark:hover:bg-primary-800 transition">◐</button>
         <button id="mobile-btn" class="md:hidden p-2 rounded-lg hover:bg-primary-100 dark:hover:bg-primary-800" aria-label="Menu">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" /></svg>
         </button>
@@ -248,7 +252,7 @@
         <p class="mt-8 text-lg md:text-2xl text-primary-200" data-i18n="heroSubtitle"></p>
         <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
           <a href="#produit" class="px-8 py-3 rounded-lg bg-primary-500 text-white font-medium hover:bg-primary-600 transition shadow-lg" data-i18n="heroCtaPrimary"></a>
-          <a href="#contact" class="px-8 py-3 rounded-lg border border-primary-300 dark:border-primary-700 hover:bg-primary-100 dark:hover:bg-primary-800 transition" data-i18n="heroCtaSecondary"></a>
+          <a href="#contact" class="px-8 py-3 rounded-lg border border-primary-300 text-primary-50 hover:bg-primary-700/40 dark:border-primary-700 dark:hover:bg-primary-800 transition" data-i18n="heroCtaSecondary"></a>
         </div>
       </div>
     </section>
@@ -269,21 +273,21 @@
         <h2 class="text-3xl font-bold text-center mb-5" data-i18n="plateformeTitle"></h2>
         <p class="text-lg text-center text-primary-700 dark:text-primary-300 max-w-4xl mx-auto mb-10" data-i18n="plateformeBody"></p>
         <div class="grid md:grid-cols-3 gap-6 mb-10">
-          <div class="p-7 rounded-2xl bg-primary-900 border border-primary-700 shadow-sm">
-            <h3 class="text-2xl font-bold text-primary-50 mb-4" data-i18n="b1"></h3>
-            <ul class="list-disc list-inside space-y-2 text-primary-300">
+          <div class="p-7 rounded-2xl bg-white dark:bg-primary-900 border border-primary-200 dark:border-primary-700 shadow-sm">
+            <h3 class="text-2xl font-bold text-primary-800 dark:text-primary-50 mb-4" data-i18n="b1"></h3>
+            <ul class="list-disc list-inside space-y-2 text-primary-600 dark:text-primary-300">
               <li data-i18n="b1l1"></li><li data-i18n="b1l2"></li><li data-i18n="b1l3"></li>
             </ul>
           </div>
-          <div class="p-7 rounded-2xl bg-primary-900 border border-primary-700 shadow-sm">
-            <h3 class="text-2xl font-bold text-primary-50 mb-4" data-i18n="b2"></h3>
-            <ul class="list-disc list-inside space-y-2 text-primary-300">
+          <div class="p-7 rounded-2xl bg-white dark:bg-primary-900 border border-primary-200 dark:border-primary-700 shadow-sm">
+            <h3 class="text-2xl font-bold text-primary-800 dark:text-primary-50 mb-4" data-i18n="b2"></h3>
+            <ul class="list-disc list-inside space-y-2 text-primary-600 dark:text-primary-300">
               <li data-i18n="b2l1"></li><li data-i18n="b2l2"></li><li data-i18n="b2l3"></li>
             </ul>
           </div>
-          <div class="p-7 rounded-2xl bg-primary-900 border border-primary-700 shadow-sm">
-            <h3 class="text-2xl font-bold text-primary-50 mb-4" data-i18n="b3"></h3>
-            <ul class="list-disc list-inside space-y-2 text-primary-300">
+          <div class="p-7 rounded-2xl bg-white dark:bg-primary-900 border border-primary-200 dark:border-primary-700 shadow-sm">
+            <h3 class="text-2xl font-bold text-primary-800 dark:text-primary-50 mb-4" data-i18n="b3"></h3>
+            <ul class="list-disc list-inside space-y-2 text-primary-600 dark:text-primary-300">
               <li data-i18n="b3l1"></li><li data-i18n="b3l2"></li>
             </ul>
           </div>
@@ -316,8 +320,8 @@
         <div><h4 class="text-xl font-bold">Olivier Bloch, M. Sc.</h4><p data-i18n="role3"></p></div>
       </div>
       <div class="mt-14 text-center px-6">
-        <h3 class="text-2xl font-semibold mb-4 text-primary-400" data-i18n="equipeMultiTitle"></h3>
-        <p class="max-w-4xl mx-auto text-lg text-primary-300" data-i18n="equipeMultiBody"></p>
+        <h3 class="text-2xl font-semibold mb-4 text-primary-600 dark:text-primary-300" data-i18n="equipeMultiTitle"></h3>
+        <p class="max-w-4xl mx-auto text-lg text-primary-700 dark:text-primary-300" data-i18n="equipeMultiBody"></p>
         <a href="#contact" class="inline-block mt-10 px-10 py-4 rounded-xl bg-primary-500 text-white font-semibold hover:bg-primary-600 transition" data-i18n="equipeMultiCta"></a>
       </div>
     </section>
