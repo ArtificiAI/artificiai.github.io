@@ -78,7 +78,9 @@
         metaTitle: "Artifici | Intelligence artificielle, NLP et aide à la décision",
         metaDescription: "Artifici aide les organisations à transformer leurs conversations numériques et données textuelles en enseignements exploitables pour mieux décider.",
         navEntreprise: "L’entreprise", navProduit: "Produit", navServices: "Services", navEquipe: "L’équipe", navPartenaires: "Partenaires", navContact: "Contact",
-        heroTitle: "Transformez vos conversations numériques en décisions éclairées",
+        heroTitle: "de vos équipes.",
+        heroTitleAccentA: "espaces numériques",
+        heroTitleAccentB: "opinions",
         heroSubtitle: "Artifici aide les organisations à analyser leurs commentaires, leurs échanges et leurs données textuelles pour faire émerger les signaux utiles à la décision.",
         heroCtaPrimary: "Découvrir la plateforme", heroCtaSecondary: "Discuter de votre projet",
         entrepriseTitle: "L’entreprise",
@@ -87,7 +89,9 @@
         p1: "Compréhension fine des conversations", p2: "Décisions mieux informées", p3: "Déploiement adapté aux réalités organisationnelles",
         plateformeTitle: "Notre plateforme",
         plateformeBody: "Une plateforme collaborative d’aide à la décision conçue pour valoriser l’intelligence collective, structurer les options, suivre les objections et conserver l’historique des décisions.",
-        b1: "Performance décisionnelle accrue", b2: "Intelligence collective valorisée", b3: "Décisions traçables et historiques",
+        b1: "Performance décisionnelle accrue", b1l1: "Amélioration de la qualité et de l’efficience décisionnelle", b1l2: "Réduction du temps en réunion", b1l3: "Suivi des décisions en continu",
+        b2: "Intelligence collective valorisée", b2l1: "Mettre en valeur l’intelligence collaborative de vos équipes", b2l2: "Rapprochement des paliers de décision", b2l3: "Transparence du processus décisionnel",
+        b3: "Décisions traçables et historiques", b3l1: "Traçabilité des décisions", b3l2: "Historisation des décisions",
         produitCta: "Découvrir la plateforme",
         servicesTitle: "Services-conseil en IA et NLP",
         servicesBody: "De l’audit au déploiement, nous accompagnons vos équipes pour transformer commentaires, conversations et données textuelles en enseignements exploitables.",
@@ -99,6 +103,9 @@
         equipeTitle: "L’équipe", cofounders: "Cofondateurs",
         equipeBody: "Trois cofondateurs passionnés par l’intelligence artificielle, les données et l’entrepreneuriat portent la vision d’Artifici : mettre au premier plan ce que les gens ont en commun.",
         role1: "Cofondateur, PDG", role2: "Cofondateur, Scientifique de données", role3: "Cofondateur, Scientifique de données",
+        equipeMultiTitle: "Notre équipe multidisciplinaire",
+        equipeMultiBody: "Ingénieurs logiciel, scientifiques des données, spécialistes UX, créatifs marketing et experts cloud travaillent main dans la main pour transformer vos données en enseignements exploitables.",
+        equipeMultiCta: "Envoyez votre candidature spontanée",
         partenairesTitle: "Nos partenaires",
         contactTitle: "Nous contacter",
         contactBody: "Une question, une demande ou un projet à nous confier ? Communiquez avec nous pour discuter de vos besoins.",
@@ -110,7 +117,9 @@
         metaTitle: "Artifici | AI, NLP and collaborative decision support",
         metaDescription: "Artifici helps organizations turn digital conversations and textual data into actionable insights for better decision-making.",
         navEntreprise: "Company", navProduit: "Product", navServices: "Services", navEquipe: "Team", navPartenaires: "Partners", navContact: "Contact",
-        heroTitle: "Turn digital conversations into better decisions",
+        heroTitle: "for your teams.",
+        heroTitleAccentA: "digital conversations",
+        heroTitleAccentB: "better decisions",
         heroSubtitle: "Artifici helps organizations analyze comments, discussions and textual data to surface the signals that matter for decision-making.",
         heroCtaPrimary: "Discover the platform", heroCtaSecondary: "Discuss your project",
         entrepriseTitle: "Company",
@@ -119,7 +128,9 @@
         p1: "Deep understanding of conversations", p2: "Better-informed decisions", p3: "Deployment aligned with organizational realities",
         plateformeTitle: "Our platform",
         plateformeBody: "A collaborative decision-support platform designed to leverage collective intelligence, structure options, track objections and preserve decision history.",
-        b1: "Improved decision performance", b2: "Collective intelligence made visible", b3: "Traceable and documented decisions",
+        b1: "Improved decision performance", b1l1: "Higher decision quality and efficiency", b1l2: "Reduced meeting time", b1l3: "Continuous decision follow-up",
+        b2: "Collective intelligence made visible", b2l1: "Highlight team collaborative intelligence", b2l2: "Closer alignment across decision levels", b2l3: "Transparent decision process",
+        b3: "Traceable and documented decisions", b3l1: "Decision traceability", b3l2: "Decision history preserved",
         produitCta: "Discover the platform",
         servicesTitle: "AI and NLP consulting",
         servicesBody: "From audit to deployment, we help teams transform comments, discussions and textual data into actionable insights.",
@@ -131,6 +142,9 @@
         equipeTitle: "Team", cofounders: "Co-founders",
         equipeBody: "Three co-founders passionate about artificial intelligence, data and entrepreneurship lead Artifici’s vision: bringing forward what people have in common.",
         role1: "Co-founder, CEO", role2: "Co-founder, Data Scientist", role3: "Co-founder, Data Scientist",
+        equipeMultiTitle: "Our multidisciplinary team",
+        equipeMultiBody: "Software engineers, data scientists, UX specialists, marketing creatives and cloud experts work hand in hand to turn your data into actionable insights.",
+        equipeMultiCta: "Send your spontaneous application",
         partenairesTitle: "Partners",
         contactTitle: "Contact us",
         contactBody: "Have a question, a request or a project to discuss? Contact us to explore how we can help.",
@@ -224,10 +238,14 @@
 
   <main class="pt-24">
     <section class="relative overflow-hidden py-20 md:py-24">
-      <div class="absolute inset-0 -z-10 select-none"><div class="h-full w-full bg-gradient-to-br from-primary-50 to-white dark:from-primary-800 dark:to-primary-900"></div></div>
+      <div class="absolute inset-0 -z-10 select-none"><div class="h-full w-full bg-gradient-to-br from-primary-800 to-primary-900 dark:from-primary-800 dark:to-primary-900"></div></div>
       <div class="max-w-4xl mx-auto text-center px-6">
-        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight" data-i18n="heroTitle"></h1>
-        <p class="mt-8 text-lg md:text-2xl text-primary-700 dark:text-primary-300" data-i18n="heroSubtitle"></p>
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight text-primary-50">
+          Analysez vos <span class="text-amber-400" data-i18n="heroTitleAccentA">espaces numériques</span>.<br>
+          Découvrez les <span class="underline decoration-amber-400 underline-offset-8" data-i18n="heroTitleAccentB">opinions</span><br>
+          <span data-i18n="heroTitle">de vos équipes.</span>
+        </h1>
+        <p class="mt-8 text-lg md:text-2xl text-primary-200" data-i18n="heroSubtitle"></p>
         <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
           <a href="#produit" class="px-8 py-3 rounded-lg bg-primary-500 text-white font-medium hover:bg-primary-600 transition shadow-lg" data-i18n="heroCtaPrimary"></a>
           <a href="#contact" class="px-8 py-3 rounded-lg border border-primary-300 dark:border-primary-700 hover:bg-primary-100 dark:hover:bg-primary-800 transition" data-i18n="heroCtaSecondary"></a>
@@ -251,9 +269,24 @@
         <h2 class="text-3xl font-bold text-center mb-5" data-i18n="plateformeTitle"></h2>
         <p class="text-lg text-center text-primary-700 dark:text-primary-300 max-w-4xl mx-auto mb-10" data-i18n="plateformeBody"></p>
         <div class="grid md:grid-cols-3 gap-6 mb-10">
-          <div class="p-7 rounded-2xl bg-white dark:bg-primary-900 border dark:border-primary-700 shadow-sm" data-i18n="b1"></div>
-          <div class="p-7 rounded-2xl bg-white dark:bg-primary-900 border dark:border-primary-700 shadow-sm" data-i18n="b2"></div>
-          <div class="p-7 rounded-2xl bg-white dark:bg-primary-900 border dark:border-primary-700 shadow-sm" data-i18n="b3"></div>
+          <div class="p-7 rounded-2xl bg-primary-900 border border-primary-700 shadow-sm">
+            <h3 class="text-2xl font-bold text-primary-50 mb-4" data-i18n="b1"></h3>
+            <ul class="list-disc list-inside space-y-2 text-primary-300">
+              <li data-i18n="b1l1"></li><li data-i18n="b1l2"></li><li data-i18n="b1l3"></li>
+            </ul>
+          </div>
+          <div class="p-7 rounded-2xl bg-primary-900 border border-primary-700 shadow-sm">
+            <h3 class="text-2xl font-bold text-primary-50 mb-4" data-i18n="b2"></h3>
+            <ul class="list-disc list-inside space-y-2 text-primary-300">
+              <li data-i18n="b2l1"></li><li data-i18n="b2l2"></li><li data-i18n="b2l3"></li>
+            </ul>
+          </div>
+          <div class="p-7 rounded-2xl bg-primary-900 border border-primary-700 shadow-sm">
+            <h3 class="text-2xl font-bold text-primary-50 mb-4" data-i18n="b3"></h3>
+            <ul class="list-disc list-inside space-y-2 text-primary-300">
+              <li data-i18n="b3l1"></li><li data-i18n="b3l2"></li>
+            </ul>
+          </div>
         </div>
         <div class="text-center"><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=WnCDb8h7N0iDQf3lxLt-ZJmnwjJlQ-FKgwnmMO-pVm9UREtBUklOVjJONjFDWlQxVjNURUZFWDVPTS4u" target="_blank" rel="noopener noreferrer" class="px-8 py-3 rounded-lg bg-primary-500 text-white font-medium hover:bg-primary-600 transition shadow-lg" data-i18n="produitCta"></a></div>
       </div>
@@ -281,6 +314,11 @@
         <div><h4 class="text-xl font-bold">Francis Couture</h4><p data-i18n="role1"></p></div>
         <div><h4 class="text-xl font-bold">Mikaël Gélinas, M. Sc.</h4><p data-i18n="role2"></p></div>
         <div><h4 class="text-xl font-bold">Olivier Bloch, M. Sc.</h4><p data-i18n="role3"></p></div>
+      </div>
+      <div class="mt-14 text-center px-6">
+        <h3 class="text-2xl font-semibold mb-4 text-primary-400" data-i18n="equipeMultiTitle"></h3>
+        <p class="max-w-4xl mx-auto text-lg text-primary-300" data-i18n="equipeMultiBody"></p>
+        <a href="#contact" class="inline-block mt-10 px-10 py-4 rounded-xl bg-primary-500 text-white font-semibold hover:bg-primary-600 transition" data-i18n="equipeMultiCta"></a>
       </div>
     </section>
 
