@@ -2,6 +2,15 @@
 <html lang="fr">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5FHT9F05X4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-5FHT9F05X4');
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Artifici | Intelligence artificielle, NLP et aide à la décision</title>
@@ -84,7 +93,7 @@
         entrepriseTitle: "L’entreprise",
         entrepriseBody: "Artifici est spécialisée en intelligence artificielle appliquée et en traitement du langage naturel. Nous aidons les organisations à comprendre ce qui se dit dans leurs espaces numériques afin d’éclairer leurs stratégies, leurs services et leurs décisions.",
         pourquoiTitle: "Pourquoi Artifici ?",
-        p1: "Compréhension fine des conversations", p1d: "Analyse sémantique et contextuelle pour révéler les signaux faibles.", p2: "Décisions mieux informées", p2d: "Tableaux clairs et priorisation des options selon les faits observés.", p3: "Déploiement adapté aux réalités organisationnelles", p3d: "Méthodes pragmatiques alignées sur vos processus, vos équipes et vos contraintes.", 
+        p1: "Compréhension fine des conversations", p1d: "Analyse sémantique et contextuelle pour révéler les signaux faibles.", p2: "Décisions mieux informées", p2d: "Tableaux clairs et priorisation des options selon les faits observés.", p3: "Déploiement adapté aux réalités organisationnelles", p3d: "Méthodes pragmatiques alignées sur vos processus, vos équipes et vos contraintes.",
         plateformeTitle: "Notre plateforme",
         plateformeBody: "Une plateforme collaborative d’aide à la décision conçue pour valoriser l’intelligence collective, structurer les options, suivre les objections et conserver l’historique des décisions.",
         b1: "Performance décisionnelle accrue", b1l1: "Amélioration de la qualité et de l’efficience décisionnelle", b1l2: "Réduction du temps en réunion", b1l3: "Suivi des décisions en continu",
@@ -121,7 +130,7 @@
         entrepriseTitle: "Company",
         entrepriseBody: "Artifici specializes in applied artificial intelligence and natural language processing. We help organizations understand what is being said across their digital spaces in order to inform strategy, services and decisions.",
         pourquoiTitle: "Why Artifici?",
-        p1: "Deep understanding of conversations", p1d: "Semantic and contextual analysis to surface weak but meaningful signals.", p2: "Better-informed decisions", p2d: "Clear dashboards and option prioritization based on observed evidence.", p3: "Deployment aligned with organizational realities", p3d: "Pragmatic methods aligned with your processes, teams and constraints.", 
+        p1: "Deep understanding of conversations", p1d: "Semantic and contextual analysis to surface weak but meaningful signals.", p2: "Better-informed decisions", p2d: "Clear dashboards and option prioritization based on observed evidence.", p3: "Deployment aligned with organizational realities", p3d: "Pragmatic methods aligned with your processes, teams and constraints.",
         plateformeTitle: "Our platform",
         plateformeBody: "A collaborative decision-support platform designed to leverage collective intelligence, structure options, track objections and preserve decision history.",
         b1: "Improved decision performance", b1l1: "Higher decision quality and efficiency", b1l2: "Reduced meeting time", b1l3: "Continuous decision follow-up",
@@ -205,7 +214,8 @@
 </head>
 
 <body class="antialiased bg-white dark:bg-primary-900 text-primary-900 dark:text-primary-50">
-  <header class="fixed inset-x-0 top-0 z-50 backdrop-blur bg-white/85 dark:bg-primary-900/80 border-b border-primary-200 dark:border-primary-800">
+  <header
+    class="fixed inset-x-0 top-0 z-50 backdrop-blur bg-white/85 dark:bg-primary-900/80 border-b border-primary-200 dark:border-primary-800">
     <div class="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 py-3 sm:py-4 gap-3">
       <a href="#" class="text-xl font-extrabold tracking-tight">
         <img src="img/artifici_noir-300x62.png" alt="Artifici.ai" width="150" height="31" class="block dark:hidden">
@@ -224,13 +234,18 @@
           <button id="lang-fr" onclick="setLang('fr')" class="px-2 py-1 rounded-md">FR</button>
           <button id="lang-en" onclick="setLang('en')" class="px-2 py-1 rounded-md">EN</button>
         </div>
-        <button onclick="toggleTheme()" data-i18n-aria="themeLabel" aria-label="Basculer le thème" class="p-2 rounded-full hover:bg-primary-100 dark:hover:bg-primary-800 transition">◐</button>
-        <button id="mobile-btn" class="md:hidden p-2 rounded-lg hover:bg-primary-100 dark:hover:bg-primary-800" aria-label="Menu">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" /></svg>
+        <button onclick="toggleTheme()" data-i18n-aria="themeLabel" aria-label="Basculer le thème"
+          class="p-2 rounded-full hover:bg-primary-100 dark:hover:bg-primary-800 transition">◐</button>
+        <button id="mobile-btn" class="md:hidden p-2 rounded-lg hover:bg-primary-100 dark:hover:bg-primary-800"
+          aria-label="Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current" fill="none" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+          </svg>
         </button>
       </div>
     </div>
-    <div id="mobile-menu" class="hidden md:hidden flex-col space-y-3 px-6 pb-5 text-sm font-medium bg-white dark:bg-primary-900 border-t border-primary-100 dark:border-primary-800">
+    <div id="mobile-menu"
+      class="hidden md:hidden flex-col space-y-3 px-6 pb-5 text-sm font-medium bg-white dark:bg-primary-900 border-t border-primary-100 dark:border-primary-800">
       <a href="#entreprise" class="block" data-i18n="navEntreprise">L’entreprise</a>
       <a href="#produit" class="block" data-i18n="navProduit">Produit</a>
       <a href="#services" class="block" data-i18n="navServices">Services</a>
@@ -242,32 +257,47 @@
 
   <main class="pt-24">
     <section class="relative overflow-hidden py-20 md:py-24">
-      <div class="absolute inset-0 -z-10 select-none"><div class="h-full w-full bg-gradient-to-br from-slate-200 via-slate-100 to-slate-300 dark:from-primary-800 dark:via-primary-800 dark:to-primary-900"></div></div>
+      <div class="absolute inset-0 -z-10 select-none">
+        <div
+          class="h-full w-full bg-gradient-to-br from-slate-200 via-slate-100 to-slate-300 dark:from-primary-800 dark:via-primary-800 dark:to-primary-900">
+        </div>
+      </div>
       <div class="max-w-4xl mx-auto text-center px-6">
-        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight text-primary-800 dark:text-primary-50" data-i18n-html="heroTitleHtml"></h1>
+        <h1
+          class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight text-primary-800 dark:text-primary-50"
+          data-i18n-html="heroTitleHtml"></h1>
         <p class="mt-8 text-lg md:text-2xl text-primary-700 dark:text-primary-200" data-i18n="heroSubtitle"></p>
         <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-          <a href="#produit" class="px-8 py-3 rounded-lg bg-primary-500 text-white font-medium hover:bg-primary-600 transition shadow-lg" data-i18n="heroCtaPrimary"></a>
-          <a href="#contact" class="px-8 py-3 rounded-lg border border-primary-300 text-primary-800 hover:bg-white/70 dark:text-primary-50 dark:border-primary-700 dark:hover:bg-primary-800 transition" data-i18n="heroCtaSecondary"></a>
+          <a href="#produit"
+            class="px-8 py-3 rounded-lg bg-primary-500 text-white font-medium hover:bg-primary-600 transition shadow-lg"
+            data-i18n="heroCtaPrimary"></a>
+          <a href="#contact"
+            class="px-8 py-3 rounded-lg border border-primary-300 text-primary-800 hover:bg-white/70 dark:text-primary-50 dark:border-primary-700 dark:hover:bg-primary-800 transition"
+            data-i18n="heroCtaSecondary"></a>
         </div>
       </div>
     </section>
 
     <section id="entreprise" class="max-w-6xl mx-auto px-6 py-20">
       <h2 class="text-3xl font-bold mb-5 text-center" data-i18n="entrepriseTitle"></h2>
-      <p class="text-lg text-primary-700 dark:text-primary-300 leading-relaxed text-center max-w-4xl mx-auto" data-i18n="entrepriseBody"></p>
-      <div class="mt-14 rounded-3xl bg-gradient-to-br from-primary-50 to-white dark:from-primary-800 dark:to-primary-900 border border-primary-100 dark:border-primary-700 p-8 md:p-10">
+      <p class="text-lg text-primary-700 dark:text-primary-300 leading-relaxed text-center max-w-4xl mx-auto"
+        data-i18n="entrepriseBody"></p>
+      <div
+        class="mt-14 rounded-3xl bg-gradient-to-br from-primary-50 to-white dark:from-primary-800 dark:to-primary-900 border border-primary-100 dark:border-primary-700 p-8 md:p-10">
         <h3 class="text-2xl md:text-3xl font-bold text-center mb-8" data-i18n="pourquoiTitle"></h3>
         <div class="grid md:grid-cols-3 gap-5 md:gap-6">
-          <article class="p-6 rounded-2xl bg-white/90 dark:bg-primary-900 border border-primary-100 dark:border-primary-700 shadow-sm">
+          <article
+            class="p-6 rounded-2xl bg-white/90 dark:bg-primary-900 border border-primary-100 dark:border-primary-700 shadow-sm">
             <h4 class="text-xl font-semibold text-primary-800 dark:text-primary-50 mb-2" data-i18n="p1"></h4>
             <p class="text-primary-600 dark:text-primary-300" data-i18n="p1d"></p>
           </article>
-          <article class="p-6 rounded-2xl bg-white/90 dark:bg-primary-900 border border-primary-100 dark:border-primary-700 shadow-sm">
+          <article
+            class="p-6 rounded-2xl bg-white/90 dark:bg-primary-900 border border-primary-100 dark:border-primary-700 shadow-sm">
             <h4 class="text-xl font-semibold text-primary-800 dark:text-primary-50 mb-2" data-i18n="p2"></h4>
             <p class="text-primary-600 dark:text-primary-300" data-i18n="p2d"></p>
           </article>
-          <article class="p-6 rounded-2xl bg-white/90 dark:bg-primary-900 border border-primary-100 dark:border-primary-700 shadow-sm">
+          <article
+            class="p-6 rounded-2xl bg-white/90 dark:bg-primary-900 border border-primary-100 dark:border-primary-700 shadow-sm">
             <h4 class="text-xl font-semibold text-primary-800 dark:text-primary-50 mb-2" data-i18n="p3"></h4>
             <p class="text-primary-600 dark:text-primary-300" data-i18n="p3d"></p>
           </article>
@@ -278,68 +308,119 @@
     <section id="produit" class="bg-primary-50 dark:bg-primary-800 py-20">
       <div class="max-w-7xl mx-auto px-6">
         <h2 class="text-3xl font-bold text-center mb-5" data-i18n="plateformeTitle"></h2>
-        <p class="text-lg text-center text-primary-700 dark:text-primary-300 max-w-4xl mx-auto mb-10" data-i18n="plateformeBody"></p>
+        <p class="text-lg text-center text-primary-700 dark:text-primary-300 max-w-4xl mx-auto mb-10"
+          data-i18n="plateformeBody"></p>
         <div class="grid md:grid-cols-3 gap-6 mb-10">
-          <div class="p-7 rounded-2xl bg-white dark:bg-primary-900 border border-primary-200 dark:border-primary-700 shadow-sm">
+          <div
+            class="p-7 rounded-2xl bg-white dark:bg-primary-900 border border-primary-200 dark:border-primary-700 shadow-sm">
             <h3 class="text-2xl font-bold text-primary-800 dark:text-primary-50 mb-4" data-i18n="b1"></h3>
             <ul class="list-disc list-inside space-y-2 text-primary-600 dark:text-primary-300">
-              <li data-i18n="b1l1"></li><li data-i18n="b1l2"></li><li data-i18n="b1l3"></li>
+              <li data-i18n="b1l1"></li>
+              <li data-i18n="b1l2"></li>
+              <li data-i18n="b1l3"></li>
             </ul>
           </div>
-          <div class="p-7 rounded-2xl bg-white dark:bg-primary-900 border border-primary-200 dark:border-primary-700 shadow-sm">
+          <div
+            class="p-7 rounded-2xl bg-white dark:bg-primary-900 border border-primary-200 dark:border-primary-700 shadow-sm">
             <h3 class="text-2xl font-bold text-primary-800 dark:text-primary-50 mb-4" data-i18n="b2"></h3>
             <ul class="list-disc list-inside space-y-2 text-primary-600 dark:text-primary-300">
-              <li data-i18n="b2l1"></li><li data-i18n="b2l2"></li><li data-i18n="b2l3"></li>
+              <li data-i18n="b2l1"></li>
+              <li data-i18n="b2l2"></li>
+              <li data-i18n="b2l3"></li>
             </ul>
           </div>
-          <div class="p-7 rounded-2xl bg-white dark:bg-primary-900 border border-primary-200 dark:border-primary-700 shadow-sm">
+          <div
+            class="p-7 rounded-2xl bg-white dark:bg-primary-900 border border-primary-200 dark:border-primary-700 shadow-sm">
             <h3 class="text-2xl font-bold text-primary-800 dark:text-primary-50 mb-4" data-i18n="b3"></h3>
             <ul class="list-disc list-inside space-y-2 text-primary-600 dark:text-primary-300">
-              <li data-i18n="b3l1"></li><li data-i18n="b3l2"></li>
+              <li data-i18n="b3l1"></li>
+              <li data-i18n="b3l2"></li>
             </ul>
           </div>
         </div>
-        <div class="text-center"><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=WnCDb8h7N0iDQf3lxLt-ZJmnwjJlQ-FKgwnmMO-pVm9UREtBUklOVjJONjFDWlQxVjNURUZFWDVPTS4u" target="_blank" rel="noopener noreferrer" class="px-8 py-3 rounded-lg bg-primary-500 text-white font-medium hover:bg-primary-600 transition shadow-lg" data-i18n="produitCta"></a></div>
+        <div class="text-center"><a
+            href="https://forms.office.com/Pages/ResponsePage.aspx?id=WnCDb8h7N0iDQf3lxLt-ZJmnwjJlQ-FKgwnmMO-pVm9UREtBUklOVjJONjFDWlQxVjNURUZFWDVPTS4u"
+            target="_blank" rel="noopener noreferrer"
+            class="px-8 py-3 rounded-lg bg-primary-500 text-white font-medium hover:bg-primary-600 transition shadow-lg"
+            data-i18n="produitCta"></a></div>
       </div>
     </section>
 
     <section id="services" class="py-20">
       <div class="max-w-7xl mx-auto px-6">
         <h2 class="text-3xl font-bold text-center mb-4" data-i18n="servicesTitle"></h2>
-        <p class="max-w-2xl mx-auto text-center text-lg text-primary-700 dark:text-primary-300 mb-12" data-i18n="servicesBody"></p>
+        <p class="max-w-2xl mx-auto text-center text-lg text-primary-700 dark:text-primary-300 mb-12"
+          data-i18n="servicesBody"></p>
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          <div class="p-6 rounded-2xl bg-white dark:bg-primary-900 border dark:border-primary-700 shadow-sm"><h3 class="text-xl font-semibold mb-2" data-i18n="s1t"></h3><p class="text-sm text-primary-600 dark:text-primary-400" data-i18n="s1d"></p></div>
-          <div class="p-6 rounded-2xl bg-white dark:bg-primary-900 border dark:border-primary-700 shadow-sm"><h3 class="text-xl font-semibold mb-2" data-i18n="s2t"></h3><p class="text-sm text-primary-600 dark:text-primary-400" data-i18n="s2d"></p></div>
-          <div class="p-6 rounded-2xl bg-white dark:bg-primary-900 border dark:border-primary-700 shadow-sm"><h3 class="text-xl font-semibold mb-2" data-i18n="s3t"></h3><p class="text-sm text-primary-600 dark:text-primary-400" data-i18n="s3d"></p></div>
-          <div class="p-6 rounded-2xl bg-white dark:bg-primary-900 border dark:border-primary-700 shadow-sm"><h3 class="text-xl font-semibold mb-2" data-i18n="s4t"></h3><p class="text-sm text-primary-600 dark:text-primary-400" data-i18n="s4d"></p></div>
+          <div class="p-6 rounded-2xl bg-white dark:bg-primary-900 border dark:border-primary-700 shadow-sm">
+            <h3 class="text-xl font-semibold mb-2" data-i18n="s1t"></h3>
+            <p class="text-sm text-primary-600 dark:text-primary-400" data-i18n="s1d"></p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white dark:bg-primary-900 border dark:border-primary-700 shadow-sm">
+            <h3 class="text-xl font-semibold mb-2" data-i18n="s2t"></h3>
+            <p class="text-sm text-primary-600 dark:text-primary-400" data-i18n="s2d"></p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white dark:bg-primary-900 border dark:border-primary-700 shadow-sm">
+            <h3 class="text-xl font-semibold mb-2" data-i18n="s3t"></h3>
+            <p class="text-sm text-primary-600 dark:text-primary-400" data-i18n="s3d"></p>
+          </div>
+          <div class="p-6 rounded-2xl bg-white dark:bg-primary-900 border dark:border-primary-700 shadow-sm">
+            <h3 class="text-xl font-semibold mb-2" data-i18n="s4t"></h3>
+            <p class="text-sm text-primary-600 dark:text-primary-400" data-i18n="s4d"></p>
+          </div>
         </div>
-        <div class="text-center"><a href="#contact" class="inline-block px-8 py-3 rounded-lg bg-primary-500 text-white font-medium hover:bg-primary-600 transition shadow-lg" data-i18n="servicesCta"></a></div>
+        <div class="text-center"><a href="#contact"
+            class="inline-block px-8 py-3 rounded-lg bg-primary-500 text-white font-medium hover:bg-primary-600 transition shadow-lg"
+            data-i18n="servicesCta"></a></div>
       </div>
     </section>
 
     <section id="equipe" class="bg-primary-50 dark:bg-primary-800 py-20">
       <h2 class="text-3xl font-bold text-center mb-6" data-i18n="equipeTitle"></h2>
-      <h3 class="text-2xl font-semibold mb-4 text-primary-600 dark:text-primary-300 text-center" data-i18n="cofounders"></h3>
-      <p class="max-w-3xl mx-auto text-center text-lg text-primary-700 dark:text-primary-300 mb-8" data-i18n="equipeBody"></p>
+      <h3 class="text-2xl font-semibold mb-4 text-primary-600 dark:text-primary-300 text-center" data-i18n="cofounders">
+      </h3>
+      <p class="max-w-3xl mx-auto text-center text-lg text-primary-700 dark:text-primary-300 mb-8"
+        data-i18n="equipeBody"></p>
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto text-center px-6">
-        <div><h4 class="text-xl font-bold">Francis Couture</h4><p data-i18n="role1"></p></div>
-        <div><h4 class="text-xl font-bold">Mikaël Gélinas, M. Sc.</h4><p data-i18n="role2"></p></div>
-        <div><h4 class="text-xl font-bold">Olivier Bloch, M. Sc.</h4><p data-i18n="role3"></p></div>
+        <div>
+          <h4 class="text-xl font-bold">Francis Couture</h4>
+          <p data-i18n="role1"></p>
+        </div>
+        <div>
+          <h4 class="text-xl font-bold">Mikaël Gélinas, M. Sc.</h4>
+          <p data-i18n="role2"></p>
+        </div>
+        <div>
+          <h4 class="text-xl font-bold">Olivier Bloch, M. Sc.</h4>
+          <p data-i18n="role3"></p>
+        </div>
       </div>
       <div class="mt-14 text-center px-6">
-        <h3 class="text-2xl font-semibold mb-4 text-primary-600 dark:text-primary-300" data-i18n="equipeMultiTitle"></h3>
+        <h3 class="text-2xl font-semibold mb-4 text-primary-600 dark:text-primary-300" data-i18n="equipeMultiTitle">
+        </h3>
         <p class="max-w-4xl mx-auto text-lg text-primary-700 dark:text-primary-300" data-i18n="equipeMultiBody"></p>
-        <a href="#contact" class="inline-block mt-10 px-10 py-4 rounded-xl bg-primary-500 text-white font-semibold hover:bg-primary-600 transition" data-i18n="equipeMultiCta"></a>
+        <a href="#contact"
+          class="inline-block mt-10 px-10 py-4 rounded-xl bg-primary-500 text-white font-semibold hover:bg-primary-600 transition"
+          data-i18n="equipeMultiCta"></a>
       </div>
     </section>
 
     <section id="partenaires" class="max-w-7xl mx-auto px-6 py-20">
       <h2 class="text-3xl font-bold text-center mb-12" data-i18n="partenairesTitle"></h2>
-      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8 text-center text-lg font-medium text-primary-700 dark:text-primary-200">
-        <div><div class="font-semibold">Impakt Scientifik</div></div>
-        <div><div class="font-semibold">Nordet &amp; co</div></div>
-        <div><div class="font-semibold">Neuraxio</div></div>
-        <div><div class="font-semibold">Mitacs</div></div>
+      <div
+        class="grid sm:grid-cols-2 md:grid-cols-4 gap-8 text-center text-lg font-medium text-primary-700 dark:text-primary-200">
+        <div>
+          <div class="font-semibold">Impakt Scientifik</div>
+        </div>
+        <div>
+          <div class="font-semibold">Nordet &amp; co</div>
+        </div>
+        <div>
+          <div class="font-semibold">Neuraxio</div>
+        </div>
+        <div>
+          <div class="font-semibold">Mitacs</div>
+        </div>
       </div>
     </section>
 
@@ -347,12 +428,17 @@
       <div class="max-w-4xl mx-auto px-6 text-center">
         <h2 class="text-3xl font-bold mb-6" data-i18n="contactTitle"></h2>
         <p class="text-lg text-primary-700 dark:text-primary-300 mb-8" data-i18n="contactBody"></p>
-        <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=WnCDb8h7N0iDQf3lxLt-ZJmnwjJlQ-FKgwnmMO-pVm9UREtBUklOVjJONjFDWlQxVjNURUZFWDVPTS4u" target="_blank" rel="noopener noreferrer" class="px-8 py-3 rounded-lg bg-primary-500 text-white font-medium hover:bg-primary-600 transition shadow-lg" data-i18n="contactCta"></a>
+        <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=WnCDb8h7N0iDQf3lxLt-ZJmnwjJlQ-FKgwnmMO-pVm9UREtBUklOVjJONjFDWlQxVjNURUZFWDVPTS4u"
+          target="_blank" rel="noopener noreferrer"
+          class="px-8 py-3 rounded-lg bg-primary-500 text-white font-medium hover:bg-primary-600 transition shadow-lg"
+          data-i18n="contactCta"></a>
       </div>
     </section>
   </main>
 
-  <footer class="py-8 border-t border-primary-200 dark:border-primary-800 text-center text-sm text-primary-500 dark:text-primary-600" data-i18n="footer"></footer>
+  <footer
+    class="py-8 border-t border-primary-200 dark:border-primary-800 text-center text-sm text-primary-500 dark:text-primary-600"
+    data-i18n="footer"></footer>
 </body>
 
 </html>
