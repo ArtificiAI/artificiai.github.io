@@ -2,6 +2,27 @@
 <html lang="fr">
 
 <head>
+  <script>
+    window.axeptioSettings = {
+      clientId: "6a185b5d60a96b997fbed96e",
+      cookiesVersion: "e2dbf4e2-5469-4bd3-9322-2b7e5a4ef425",
+      googleConsentMode: {
+        default: {
+          analytics_storage: "denied",
+          ad_storage: "denied",
+          ad_user_data: "denied",
+          ad_personalization: "denied",
+          wait_for_update: 500
+        }
+      }
+    };
+
+    (function (d, s) {
+      var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+      e.async = true; e.src = "//static.axept.io/sdk.js";
+      t.parentNode.insertBefore(e, t);
+    })(document, "script");
+  </script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5FHT9F05X4"></script>
   <script>
@@ -439,27 +460,6 @@
   <footer
     class="py-8 border-t border-primary-200 dark:border-primary-800 text-center text-sm text-primary-500 dark:text-primary-600"
     data-i18n="footer"></footer>
-  <script>
-    window.axeptioSettings = {
-      clientId: "6a185b5d60a96b997fbed96e",
-      cookiesVersion: "e2dbf4e2-5469-4bd3-9322-2b7e5a4ef425",
-      googleConsentMode: {
-        default: {
-          analytics_storage: "denied",
-          ad_storage: "denied",
-          ad_user_data: "denied",
-          ad_personalization: "denied",
-          wait_for_update: 500
-        }
-      }
-    };
-
-    (function (d, s) {
-      var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
-      e.async = true; e.src = "//static.axept.io/sdk.js";
-      t.parentNode.insertBefore(e, t);
-    })(document, "script");
-  </script>
 </body>
 
 </html>
