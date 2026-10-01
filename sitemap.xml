@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://artifici.ai/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://artifici.ai/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://artifici.ai/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artifici.ai/"/>
+  </url>
+  <url>
+    <loc>https://artifici.ai/en/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://artifici.ai/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://artifici.ai/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artifici.ai/"/>
+  </url>
+  <url>
+    <loc>https://artifici.ai/confidentialite/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://artifici.ai/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://artifici.ai/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artifici.ai/confidentialite/"/>
+  </url>
+  <url>
+    <loc>https://artifici.ai/en/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://artifici.ai/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://artifici.ai/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artifici.ai/confidentialite/"/>
+  </url>
+  <url>
+    <loc>https://artifici.ai/blogue/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://artifici.ai/blogue/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://artifici.ai/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artifici.ai/blogue/"/>
+  </url>
+  <url>
+    <loc>https://artifici.ai/en/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://artifici.ai/blogue/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://artifici.ai/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artifici.ai/blogue/"/>
+  </url>
+</urlset>

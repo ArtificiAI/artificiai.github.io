@@ -1,0 +1,31 @@
+{{{draftBanner}}}
+    <article>
+      <header class="bg-primary-50 dark:bg-primary-800">
+        <div class="mx-auto max-w-3xl px-4 py-14 sm:px-6 md:py-20 lg:px-8">
+          <a href="{{blogUrl}}" class="text-sm font-medium text-primary-600 hover:text-primary-500 dark:text-primary-200 dark:hover:text-white"><span aria-hidden="true">←</span> {{blogBack}}</a>
+          <p class="mt-6 text-sm">
+            <span class="rounded-full bg-white px-3 py-1 font-medium text-primary-700 ring-1 ring-primary-100 dark:bg-primary-900 dark:text-primary-100 dark:ring-primary-700">{{articleCategory}}</span>
+          </p>
+          <h1 class="mt-5 text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl md:text-5xl">{{articleTitle}}</h1>
+          <p class="lead mt-5">{{articleDescription}}</p>
+          <p class="mt-6 flex flex-wrap gap-x-2 gap-y-1 text-sm text-primary-600 dark:text-primary-300">
+            <span class="font-semibold text-primary-800 dark:text-primary-100">{{articleAuthor}}</span>
+            <span aria-hidden="true">·</span>
+            <time datetime="{{articleDate}}">{{articleDateLabel}}</time>
+            {{{articleUpdated}}}
+            <span aria-hidden="true">·</span>
+            <span>{{articleReadingTime}}</span>
+          </p>
+          {{{articleTranslationLink}}}
+        </div>
+      </header>
+      {{{articleCover}}}
+      <div class="longform mx-auto max-w-3xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
+{{{articleHtml}}}
+      </div>
+      <footer class="mx-auto max-w-3xl px-4 pb-20 sm:px-6 lg:px-8">
+        <div class="border-t border-primary-100 pt-8 dark:border-primary-800">
+          <a href="{{blogUrl}}" class="btn-secondary"><span aria-hidden="true">←</span> {{blogBack}}</a>
+        </div>
+      </footer>
+    </article>

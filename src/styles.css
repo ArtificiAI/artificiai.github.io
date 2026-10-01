@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Inter (SIL OFL 1.1), auto-hébergée : aucune requête vers Google Fonts. Copiée par scripts/build.js. */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('/assets/fonts/inter-latin-wght-normal.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+    U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('/assets/fonts/inter-latin-ext-wght-normal.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF,
+    U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@layer base {
+  html {
+    /* Keep anchored section titles clear of the sticky header. */
+    scroll-padding-top: 5rem;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  :focus-visible {
+    outline: 2px solid theme('colors.primary.500');
+    outline-offset: 3px;
+  }
+
+  .dark :focus-visible {
+    outline-color: theme('colors.amber.400');
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 font-semibold transition;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary-500 text-white shadow-lg shadow-primary-500/20 hover:bg-primary-600;
+  }
+
+  .btn-secondary {
+    @apply btn border border-primary-300 text-primary-800 hover:bg-white dark:border-primary-600 dark:text-primary-50 dark:hover:bg-primary-800;
+  }
+
+  .section-title {
+    @apply text-3xl font-bold tracking-tight md:text-4xl;
+  }
+
+  .section-title::before {
+    @apply mb-4 block h-1 w-10 rounded-full bg-amber-500;
+    content: '';
+  }
+
+  .lead {
+    @apply text-lg leading-relaxed text-primary-700 dark:text-primary-200;
+  }
+
+  /* Texte long : politique de confidentialité et articles du blogue. */
+  .longform {
+    @apply leading-relaxed text-primary-800 dark:text-primary-100;
+  }
+
+  .longform > :first-child {
+    @apply mt-0;
+  }
+
+  .longform h2 {
+    @apply mt-14 text-2xl font-bold tracking-tight text-primary-900 dark:text-white;
+  }
+
+  .longform h3 {
+    @apply mt-8 text-lg font-semibold text-primary-900 dark:text-white;
+  }
+
+  .longform h4 {
+    @apply mt-6 font-semibold text-primary-900 dark:text-white;
+  }
+
+  .longform p,
+  .longform address {
+    @apply mt-4;
+  }
+
+  .longform address {
+    @apply not-italic;
+  }
+
+  .longform ul,
+  .longform ol {
+    @apply mt-4 space-y-2 pl-6 marker:text-primary-400;
+  }
+
+  .longform ul {
+    @apply list-disc;
+  }
+
+  .longform ol {
+    @apply list-decimal;
+  }
+
+  .longform li > ul,
+  .longform li > ol {
+    @apply mt-2;
+  }
+
+  .longform a,
+  .longform button {
+    @apply font-medium text-primary-600 underline underline-offset-2 hover:text-primary-500 dark:text-primary-200 dark:hover:text-white;
+  }
+
+  .longform strong {
+    @apply font-semibold text-primary-900 dark:text-white;
+  }
+
+  .longform blockquote {
+    @apply mt-6 border-l-4 border-amber-400 pl-5 text-lg italic text-primary-700 dark:text-primary-200;
+  }
+
+  .longform code {
+    @apply rounded bg-primary-50 px-1 py-0.5 text-[0.875em] dark:bg-primary-800;
+  }
+
+  .longform pre {
+    @apply mt-6 overflow-x-auto rounded-xl bg-primary-950 p-5 text-sm leading-6 text-primary-50 ring-1 ring-primary-800;
+  }
+
+  .longform pre code {
+    @apply bg-transparent p-0 text-[1em] text-inherit;
+  }
+
+  .longform img {
+    @apply mt-8 h-auto max-w-full rounded-xl;
+  }
+
+  .longform figure {
+    @apply mt-8;
+  }
+
+  .longform figure img {
+    @apply mt-0;
+  }
+
+  .longform figcaption {
+    @apply mt-3 text-center text-sm text-primary-600 dark:text-primary-300;
+  }
+
+  .longform hr {
+    @apply my-12 border-primary-100 dark:border-primary-800;
+  }
+
+  .legal-summary {
+    @apply mt-10 rounded-2xl bg-primary-50 p-6 ring-1 ring-primary-100 dark:bg-primary-800 dark:ring-primary-700 sm:p-8;
+  }
+
+  .legal-summary h2 {
+    @apply mt-0 text-xl;
+  }
+
+  .longform-table {
+    @apply mt-6 overflow-x-auto rounded-xl ring-1 ring-primary-100 dark:ring-primary-700;
+  }
+
+  .longform-table table {
+    @apply w-full border-collapse text-left text-sm;
+  }
+
+  .longform-table th {
+    @apply bg-primary-50 px-4 py-3 font-semibold text-primary-900 dark:bg-primary-800 dark:text-white;
+  }
+
+  .longform-table td {
+    @apply border-t border-primary-100 px-4 py-3 align-top dark:border-primary-700;
+  }
+}

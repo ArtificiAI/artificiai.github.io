@@ -461,3 +461,29 @@ The content of this repository is public, but the rights to the texts, trademark
 All rights reserved.
 
 © Artifici Online Services inc. All rights reserved.
+
+---
+
+## Développement du site / Site development
+
+Les pages (`index.html`, `en/`, `confidentialite/`, `blogue/`), `assets/`, `sitemap.xml` et les flux RSS sont **générés** : ne pas les modifier directement.
+The pages (`index.html`, `en/`, `confidentialite/`, `blogue/`), `assets/`, `sitemap.xml` and RSS feeds are **generated** — do not edit them directly.
+
+- `src/layout.html` — en-tête, pied de page et `<head>` communs / shared header, footer and `<head>`
+- `src/pages/`, `src/partials/` — contenu des pages et du blogue / page and blog templates
+- `src/content.js` — textes FR/EN / FR/EN copy
+- `src/blogue/` — articles du blogue en Markdown, avec **[le guide des auteurs](src/blogue/README.md)** / blog posts and authoring guide
+- `src/blog-config.js` — auteurs et catégories du blogue / blog authors and categories
+- `src/styles.css`, `tailwind.config.js` — styles (Tailwind CSS v3, police Inter auto-hébergée / self-hosted Inter font)
+- `scripts/` — génération, aperçu et tests / build, preview and tests
+- `robots.txt` — modifié à la main / edited by hand
+
+```bash
+npm install
+npm run build     # génère le site de production (sans brouillons) / builds the production site (no drafts)
+npm run apercu    # aperçu local avec brouillons → http://localhost:8080 / local preview with drafts
+npm test          # tests du blogue / blog tests
+```
+
+Commiter les fichiers générés avec les sources : GitHub Pages publie le dépôt tel quel (`_config.yml` exclut `src/`, `scripts/` et l’outillage). Sur chaque pull request, la vérification automatique (`.github/workflows/site.yml`) lance les tests, régénère le site et ajoute les fichiers générés à la PR.
+Commit the generated files along with the sources: GitHub Pages serves the repository as-is. On every pull request, the automated check runs the tests, rebuilds the site and adds the generated files to the PR.

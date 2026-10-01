@@ -1,0 +1,9 @@
+# GitHub Pages (Jekyll) : ne publier que le site généré, pas les sources ni l’outillage.
+exclude:
+  - src
+  - scripts
+  - node_modules
+  - package.json
+  - package-lock.json
+  - tailwind.config.js
+  - README.md

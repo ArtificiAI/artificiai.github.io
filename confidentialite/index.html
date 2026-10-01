@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<!-- Fichier généré par scripts/build.js à partir de src/ — ne pas modifier directement. Voir README (Développement). -->
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politique de confidentialité | Artifici</title>
+  <meta name="description" content="Comment Artifici recueille, utilise et protège vos renseignements personnels, et comment exercer vos droits.">
+  <link rel="canonical" href="https://artifici.ai/confidentialite/">
+  <link rel="alternate" hreflang="fr" href="https://artifici.ai/confidentialite/">
+  <link rel="alternate" hreflang="en" href="https://artifici.ai/en/privacy/">
+  <link rel="alternate" hreflang="x-default" href="https://artifici.ai/confidentialite/">
+  <meta property="og:locale:alternate" content="en_CA">
+  <link rel="alternate" type="application/rss+xml" title="Blogue Artifici" href="/blogue/rss.xml">
+
+  <meta property="og:locale" content="fr_CA">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Politique de confidentialité | Artifici">
+  <meta property="og:description" content="Comment Artifici recueille, utilise et protège vos renseignements personnels, et comment exercer vos droits.">
+  <meta property="og:url" content="https://artifici.ai/confidentialite/">
+  <meta property="og:site_name" content="Artifici.ai">
+  <meta property="og:image" content="https://artifici.ai/img/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Artifici — Transformez vos conversations numériques en décisions éclairées.">
+  <meta name="twitter:image" content="https://artifici.ai/img/og-cover.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Politique de confidentialité | Artifici">
+  <meta name="twitter:description" content="Comment Artifici recueille, utilise et protège vos renseignements personnels, et comment exercer vos droits.">
+
+
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d2f4f" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <script>
+    // Thème et langue choisis lors d’une visite précédente, appliqués avant l’affichage.
+    (function () {
+      try {
+        var root = document.documentElement;
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && matchMedia('(prefers-color-scheme: dark)').matches)) {
+          root.classList.add('dark');
+        }
+        // Seul un choix explicite de l’anglais redirige (les anciennes versions du site enregistraient « fr » par défaut),
+        // et seulement vers un vrai équivalent anglais de la page.
+        var en = '/en/privacy/';
+        if (en && root.lang === 'fr' && localStorage.lang === 'en') location.replace(en + location.hash);
+      } catch (e) {}
+    })();
+  </script>
+
+  <script>
+    // Consentement : tout est refusé par défaut, avant le chargement de Google Analytics.
+    // Axeptio met ensuite à jour le consentement selon le choix du visiteur.
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      wait_for_update: 500
+    });
+    gtag('js', new Date());
+    gtag('config', 'G-5FHT9F05X4');
+
+    window.axeptioSettings = {
+      clientId: "6a185b5d60a96b997fbed96e",
+      cookiesVersion: "e2dbf4e2-5469-4bd3-9322-2b7e5a4ef425",
+      googleConsentMode: {
+        default: {
+          analytics_storage: "denied",
+          ad_storage: "denied",
+          ad_user_data: "denied",
+          ad_personalization: "denied",
+          wait_for_update: 500
+        }
+      }
+    };
+  </script>
+  <script async src="https://static.axept.io/sdk.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5FHT9F05X4"></script>
+
+  <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/site.css?v=22aa29181d">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://artifici.ai/#organization",
+      "name": "Artifici",
+      "alternateName": "Artifici.ai",
+      "legalName": "Les Services en ligne Artifici inc.",
+      "url": "https://artifici.ai/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://artifici.ai/android-chrome-512x512.png",
+        "width": 512,
+        "height": 512
+      },
+      "description": "Entreprise québécoise spécialisée en intelligence artificielle appliquée et en traitement du langage naturel : plateforme collaborative d’aide à la décision et services-conseil en IA.",
+      "foundingDate": "2017",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Québec",
+        "addressRegion": "QC",
+        "addressCountry": "CA"
+      },
+      "founder": [
+        {
+          "@type": "Person",
+          "name": "Francis Couture",
+          "jobTitle": "Cofondateur, PDG"
+        },
+        {
+          "@type": "Person",
+          "name": "Mikaël Gélinas",
+          "jobTitle": "Cofondateur, Scientifique de données"
+        },
+        {
+          "@type": "Person",
+          "name": "Olivier Bloch",
+          "jobTitle": "Cofondateur, Scientifique de données"
+        }
+      ],
+      "knowsAbout": [
+        "Intelligence artificielle appliquée",
+        "Traitement du langage naturel",
+        "Argument mining",
+        "Argument mapping",
+        "Aide à la décision collaborative",
+        "Intelligence collective"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services-conseil en IA et NLP",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Audit et diagnostic",
+              "description": "Évaluation de vos données, de vos usages et des opportunités prioritaires.",
+              "provider": {
+                "@id": "https://artifici.ai/#organization"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Prototypes rapides",
+              "description": "Validation rapide de cas d’usage à fort impact métier.",
+              "provider": {
+                "@id": "https://artifici.ai/#organization"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Fine-tuning et MLOps",
+              "description": "Adaptation de modèles, industrialisation et déploiement sécurisé.",
+              "provider": {
+                "@id": "https://artifici.ai/#organization"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Formation et transfert",
+              "description": "Montée en compétence de vos équipes techniques et métiers.",
+              "provider": {
+                "@id": "https://artifici.ai/#organization"
+              }
+            }
+          }
+        ]
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/artifici",
+        "https://twitter.com/ArtificiAI",
+        "https://github.com/ArtificiAI"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://artifici.ai/#website",
+      "url": "https://artifici.ai/",
+      "name": "Artifici",
+      "inLanguage": [
+        "fr-CA",
+        "en-CA"
+      ],
+      "publisher": {
+        "@id": "https://artifici.ai/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://artifici.ai/confidentialite/#webpage",
+      "url": "https://artifici.ai/confidentialite/",
+      "name": "Politique de confidentialité | Artifici",
+      "description": "Comment Artifici recueille, utilise et protège vos renseignements personnels, et comment exercer vos droits.",
+      "inLanguage": "fr-CA",
+      "isPartOf": {
+        "@id": "https://artifici.ai/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://artifici.ai/confidentialite/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://artifici.ai/confidentialite/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Artifici",
+          "item": "https://artifici.ai/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Politique de confidentialité",
+          "item": "https://artifici.ai/confidentialite/"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+
+<body class="bg-white font-sans text-primary-900 antialiased dark:bg-primary-900 dark:text-primary-50">
+  <a href="#contenu"
+    class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:font-semibold focus:text-primary-800 focus:shadow-lg">Aller au contenu</a>
+
+  <header
+    class="sticky top-0 z-50 border-b border-primary-100 bg-white/90 backdrop-blur dark:border-primary-800 dark:bg-primary-900/85">
+    <div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
+      <a href="/" class="shrink-0" aria-label="Artifici — accueil">
+        <img src="/img/artifici_noir-300x62.png" alt="" width="150" height="31" class="block h-auto w-28 dark:hidden sm:w-[150px]">
+        <img src="/img/artifici_blanc-300x62.png" alt="" width="150" height="31" class="hidden h-auto w-28 dark:block sm:w-[150px]">
+      </a>
+
+      <nav aria-label="Navigation principale" class="hidden md:block">
+        <ul class="flex gap-6 text-sm font-medium lg:gap-7">
+          <li><a href="/#entreprise" class="hover:text-primary-500 dark:hover:text-primary-200">L’entreprise</a></li>
+          <li><a href="/#produit" class="hover:text-primary-500 dark:hover:text-primary-200">Produit</a></li>
+          <li><a href="/#services" class="hover:text-primary-500 dark:hover:text-primary-200">Services</a></li>
+          <li><a href="/#equipe" class="hover:text-primary-500 dark:hover:text-primary-200">L’équipe</a></li>
+          <li><a href="/blogue/" aria-current="false" class="hover:text-primary-500 aria-[current=page]:text-primary-500 dark:hover:text-primary-200 dark:aria-[current=page]:text-amber-400">Blogue</a></li>
+          <li><a href="/#contact" class="hover:text-primary-500 dark:hover:text-primary-200">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="flex items-center gap-1 sm:gap-3">
+        <nav aria-label="Langue"
+          class="inline-flex rounded-lg border border-primary-200 p-1 text-xs font-medium dark:border-primary-700 sm:text-sm">
+          <a href="/confidentialite/" lang="fr" hreflang="fr" data-lang="fr" aria-current="page"
+            class="rounded-md px-2 py-1 hover:bg-primary-50 aria-[current=page]:bg-primary-500 aria-[current=page]:text-white dark:hover:bg-primary-800 dark:aria-[current=page]:bg-primary-500">
+            <span class="sr-only">Français</span><span aria-hidden="true">FR</span>
+          </a>
+          <a href="/en/privacy/" lang="en" hreflang="en" data-lang="en" aria-current="false"
+            class="rounded-md px-2 py-1 hover:bg-primary-50 aria-[current=page]:bg-primary-500 aria-[current=page]:text-white dark:hover:bg-primary-800 dark:aria-[current=page]:bg-primary-500">
+            <span class="sr-only">English</span><span aria-hidden="true">EN</span>
+          </a>
+        </nav>
+
+        <button id="theme-toggle" type="button" aria-pressed="false" aria-label="Thème sombre"
+          class="rounded-full p-2 hover:bg-primary-50 dark:hover:bg-primary-800">
+          <svg class="h-5 w-5 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+            aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+          </svg>
+          <svg class="hidden h-5 w-5 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1.75" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+          </svg>
+        </button>
+
+        <button id="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu"
+          aria-label="Menu" class="group rounded-lg p-2 hover:bg-primary-50 dark:hover:bg-primary-800 md:hidden">
+          <svg class="h-6 w-6 group-aria-expanded:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+          <svg class="hidden h-6 w-6 group-aria-expanded:block" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <nav id="mobile-menu" aria-label="Menu"
+      class="hidden border-t border-primary-100 px-4 pb-4 pt-2 dark:border-primary-800 sm:px-6 md:hidden">
+      <ul class="text-base font-medium">
+        <li><a href="/#entreprise" class="block py-2.5">L’entreprise</a></li>
+        <li><a href="/#produit" class="block py-2.5">Produit</a></li>
+        <li><a href="/#services" class="block py-2.5">Services</a></li>
+        <li><a href="/#equipe" class="block py-2.5">L’équipe</a></li>
+        <li><a href="/blogue/" aria-current="false" class="block py-2.5 aria-[current=page]:text-primary-500 dark:aria-[current=page]:text-amber-400">Blogue</a></li>
+        <li><a href="/#contact" class="block py-2.5">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenu">
+    <section class="bg-primary-50 dark:bg-primary-800">
+      <div class="mx-auto max-w-3xl px-4 py-14 sm:px-6 md:py-20 lg:px-8">
+        <a href="/" class="text-sm font-medium text-primary-600 hover:text-primary-500 dark:text-primary-200 dark:hover:text-white"><span aria-hidden="true">←</span> Retour à l’accueil</a>
+        <h1 class="mt-6 text-4xl font-extrabold tracking-tight md:text-5xl">Politique de confidentialité</h1>
+        <p class="mt-4 text-primary-700 dark:text-primary-200">Dernière mise à jour&nbsp;: 27 septembre 2026</p>
+      </div>
+    </section>
+
+    <article class="longform mx-auto max-w-3xl px-4 py-14 sm:px-6 md:py-20 lg:px-8">
+      <p>Les Services en ligne Artifici inc. («&nbsp;Artifici&nbsp;», «&nbsp;nous&nbsp;») accorde une grande importance à la protection de vos renseignements personnels. La présente politique explique, en termes simples, quels renseignements nous recueillons par l’entremise du site <a href="/">artifici.ai</a>, à quelles fins nous les utilisons, avec qui nous les partageons et comment exercer vos droits. Elle s’appuie sur la <em>Loi sur la protection des renseignements personnels dans le secteur privé</em> du Québec.</p>
+
+      <div class="legal-summary">
+        <h2>En bref</h2>
+        <ul>
+          <li>Vous pouvez consulter le site sans nous fournir de renseignements personnels.</li>
+          <li>Les témoins de mesure d’audience (Google Analytics) ne sont activés qu’avec votre consentement, que vous pouvez retirer en tout temps.</li>
+          <li>Nous ne vendons pas vos renseignements personnels.</li>
+          <li>Pour toute question ou pour exercer vos droits, utilisez <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=WnCDb8h7N0iDQf3lxLt-ZJmnwjJlQ-FKgwnmMO-pVm9UREtBUklOVjJONjFDWlQxVjNURUZFWDVPTS4u" target="_blank" rel="noopener noreferrer">notre formulaire de contact<span class="sr-only"> (s’ouvre dans un nouvel onglet)</span></a>.</li>
+        </ul>
+      </div>
+
+      <h2>1. Responsable de la protection des renseignements personnels</h2>
+      <p>Le responsable de la protection des renseignements personnels d’Artifici veille au respect de la présente politique et de la loi. Vous pouvez le joindre aux coordonnées suivantes&nbsp;:</p>
+      <address>
+        Responsable de la protection des renseignements personnels<br>
+        Les Services en ligne Artifici inc.<br>
+        Québec (Québec), Canada<br>
+        Par <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=WnCDb8h7N0iDQf3lxLt-ZJmnwjJlQ-FKgwnmMO-pVm9UREtBUklOVjJONjFDWlQxVjNURUZFWDVPTS4u" target="_blank" rel="noopener noreferrer">le formulaire de contact<span class="sr-only"> (s’ouvre dans un nouvel onglet)</span></a>
+      </address>
+
+      <h2>2. Renseignements que nous recueillons</h2>
+      <h3>Renseignements que vous nous transmettez</h3>
+      <p>Lorsque vous remplissez notre formulaire de contact ou que vous nous écrivez, nous recueillons les renseignements que vous choisissez de nous fournir, par exemple votre nom, votre adresse courriel, le nom de votre organisation et le contenu de votre message. Si vous nous envoyez une candidature spontanée, nous recueillons aussi les renseignements qu’elle contient, par exemple votre curriculum vitæ.</p>
+      <h3>Renseignements recueillis automatiquement</h3>
+      <ul>
+        <li><strong>Mesure d’audience, avec votre consentement.</strong> Si vous acceptez les témoins de mesure d’audience, Google Analytics recueille des renseignements sur votre utilisation du site&nbsp;: pages consultées, durée de la visite, site de provenance, type d’appareil et de navigateur, langue et région approximative. Google Analytics n’enregistre pas votre adresse IP.</li>
+        <li><strong>Sans votre consentement,</strong> aucun témoin de mesure d’audience n’est déposé. Google peut toutefois recevoir des signaux techniques limités, sans témoin ni identifiant persistant (par exemple, le fait qu’une page a été consultée), qui servent uniquement à produire des statistiques globales.</li>
+        <li><strong>Journaux de l’hébergeur.</strong> Notre site est hébergé par GitHub Pages. GitHub enregistre l’adresse IP des visiteurs à des fins de sécurité et d’exploitation du service.</li>
+        <li><strong>Vos choix de consentement.</strong> Notre outil de gestion du consentement, Axeptio, enregistre vos choix concernant les témoins afin de les respecter lors de vos prochaines visites.</li>
+        <li><strong>Vos préférences d’affichage.</strong> Le thème (clair ou sombre) et la langue que vous choisissez sont enregistrés uniquement dans votre navigateur et ne nous sont pas transmis.</li>
+      </ul>
+
+      <h2>3. Pourquoi nous utilisons vos renseignements</h2>
+      <p>Nous utilisons vos renseignements personnels uniquement pour&nbsp;:</p>
+      <ul>
+        <li>répondre à vos questions et à vos demandes, et assurer le suivi de nos échanges&nbsp;;</li>
+        <li>évaluer votre candidature, si vous nous en avez transmis une&nbsp;;</li>
+        <li>comprendre comment le site est utilisé afin de l’améliorer, si vous y avez consenti&nbsp;;</li>
+        <li>assurer la sécurité et le bon fonctionnement du site&nbsp;;</li>
+        <li>respecter nos obligations légales.</li>
+      </ul>
+      <p>Nous ne vendons pas vos renseignements personnels. Nous ne prenons aucune décision fondée exclusivement sur un traitement automatisé de vos renseignements.</p>
+
+      <h2>4. Consentement</h2>
+      <p>En nous transmettant vos renseignements par le formulaire ou par courriel, vous consentez à ce que nous les utilisions aux fins décrites ci-dessus. Les témoins de mesure d’audience ne sont activés que si vous les acceptez dans le bandeau de consentement. Vous pouvez retirer votre consentement en tout temps en cliquant sur <button type="button" data-cookie-settings>Gérer les cookies</button> (aussi offert au bas de chaque page) ou en nous écrivant.</p>
+
+      <h2>5. Témoins (cookies) et technologies similaires</h2>
+      <div class="longform-table">
+        <table class="min-w-[36rem]">
+          <thead>
+            <tr>
+              <th scope="col">Témoin</th>
+              <th scope="col">Fournisseur</th>
+              <th scope="col">Finalité</th>
+              <th scope="col">Consentement</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>axeptio_cookies</code>, <code>axeptio_authorized_vendors</code>, <code>axeptio_all_vendors</code></td>
+              <td>Axeptio</td>
+              <td>Mémoriser vos choix de consentement</td>
+              <td>Non requis (nécessaire)</td>
+            </tr>
+            <tr>
+              <td><code>_ga</code>, <code>_ga_*</code></td>
+              <td>Google Analytics</td>
+              <td>Mesure d’audience</td>
+              <td>Requis</td>
+            </tr>
+            <tr>
+              <td><code>theme</code>, <code>lang</code> (stockage local)</td>
+              <td>Artifici, dans votre navigateur seulement</td>
+              <td>Mémoriser le thème et la langue choisis</td>
+              <td>Non requis (préférence)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Vous pouvez aussi supprimer ou bloquer les témoins dans les paramètres de votre navigateur.</p>
+
+      <h2>6. Communication de vos renseignements et hébergement à l’extérieur du Québec</h2>
+      <p>Nous communiquons vos renseignements uniquement aux fournisseurs qui nous aident à exploiter le site et à vous répondre, et seulement dans la mesure nécessaire&nbsp;:</p>
+      <ul>
+        <li><strong>GitHub, Inc.</strong> (États-Unis)&nbsp;: hébergement du site&nbsp;;</li>
+        <li><strong>Google LLC</strong> (États-Unis)&nbsp;: mesure d’audience, si vous y consentez&nbsp;;</li>
+        <li><strong>Axeptio</strong> (France)&nbsp;: gestion du consentement aux témoins&nbsp;;</li>
+        <li><strong>Microsoft Corporation</strong>&nbsp;: formulaire de contact (Microsoft Forms)&nbsp;;</li>
+        <li>notre fournisseur de messagerie électronique, pour les courriels que vous nous envoyez.</li>
+      </ul>
+      <p>Certains de ces fournisseurs conservent des renseignements à l’extérieur du Québec, notamment aux États-Unis et en Europe. Avant de communiquer des renseignements à l’extérieur du Québec, nous évaluons s’ils y bénéficieront d’une protection adéquate, et ces communications sont encadrées par des engagements contractuels.</p>
+      <p>Nous pouvons aussi communiquer des renseignements lorsque la loi l’exige ou l’autorise, par exemple à la demande d’une autorité compétente.</p>
+
+      <h2>7. Conservation</h2>
+      <p>Nous conservons vos renseignements personnels seulement le temps nécessaire aux fins pour lesquelles ils ont été recueillis, ou selon ce qu’exige la loi. Ils sont ensuite détruits ou anonymisés de façon sécuritaire.</p>
+
+      <h2>8. Sécurité</h2>
+      <p>Nous prenons des mesures de sécurité raisonnables, adaptées à la sensibilité des renseignements, pour les protéger contre la perte, le vol et l’accès, l’utilisation ou la communication non autorisés. L’accès à vos renseignements est limité aux personnes qui en ont besoin dans le cadre de leurs fonctions. En cas d’incident de confidentialité présentant un risque de préjudice sérieux, nous aviserons la Commission d’accès à l’information et les personnes concernées, conformément à la loi.</p>
+
+      <h2>9. Vos droits</h2>
+      <p>Sous réserve des exceptions prévues par la loi, vous pouvez&nbsp;:</p>
+      <ul>
+        <li>accéder aux renseignements personnels que nous détenons à votre sujet et en obtenir une copie&nbsp;;</li>
+        <li>faire rectifier des renseignements inexacts, incomplets ou équivoques&nbsp;;</li>
+        <li>retirer votre consentement à leur utilisation&nbsp;;</li>
+        <li>demander que nous cessions de diffuser vos renseignements ou que nous désindexions tout hyperlien rattaché à votre nom, dans les cas prévus par la loi&nbsp;;</li>
+        <li>obtenir les renseignements que vous nous avez fournis dans un format technologique structuré et couramment utilisé.</li>
+      </ul>
+      <p>Pour exercer ces droits, écrivez au responsable de la protection des renseignements personnels par <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=WnCDb8h7N0iDQf3lxLt-ZJmnwjJlQ-FKgwnmMO-pVm9UREtBUklOVjJONjFDWlQxVjNURUZFWDVPTS4u" target="_blank" rel="noopener noreferrer">notre formulaire de contact<span class="sr-only"> (s’ouvre dans un nouvel onglet)</span></a>. Nous vous répondrons dans un délai de 30 jours et pourrions vous demander de confirmer votre identité.</p>
+      <p>Si vous n’êtes pas satisfait de notre réponse, vous pouvez porter plainte auprès de la <a href="https://www.cai.gouv.qc.ca/" target="_blank" rel="noopener noreferrer">Commission d’accès à l’information du Québec<span class="sr-only"> (s’ouvre dans un nouvel onglet)</span></a>.</p>
+
+      <h2>10. Personnes mineures</h2>
+      <p>Notre site s’adresse aux organisations et aux professionnels. Il n’est pas destiné aux personnes de moins de 14 ans, et nous ne recueillons pas sciemment de renseignements à leur sujet.</p>
+
+      <h2>11. Liens vers d’autres sites</h2>
+      <p>Notre site contient des liens vers des sites tiers, par exemple LinkedIn, GitHub et Microsoft Forms. Ces sites ont leurs propres politiques de confidentialité, que nous vous invitons à consulter.</p>
+
+      <h2>12. Modifications</h2>
+      <p>Nous pouvons mettre à jour la présente politique. La date de la dernière mise à jour figure en haut de cette page. En cas de changement important, nous l’indiquerons clairement sur le site.</p>
+
+      <h2>13. Nous joindre</h2>
+      <p>Pour toute question concernant la présente politique ou vos renseignements personnels, écrivez-nous par <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=WnCDb8h7N0iDQf3lxLt-ZJmnwjJlQ-FKgwnmMO-pVm9UREtBUklOVjJONjFDWlQxVjNURUZFWDVPTS4u" target="_blank" rel="noopener noreferrer">notre formulaire de contact<span class="sr-only"> (s’ouvre dans un nouvel onglet)</span></a>.</p>
+    </article>
+
+  </main>
+
+  <footer class="border-t border-primary-100 dark:border-primary-800">
+    <div class="mx-auto grid max-w-6xl gap-10 px-4 py-12 text-sm sm:px-6 md:grid-cols-[2fr_1fr_1fr] lg:px-8">
+      <div>
+        <img src="/img/artifici_noir-300x62.png" alt="Artifici" width="120" height="25" loading="lazy" class="block dark:hidden">
+        <img src="/img/artifici_blanc-300x62.png" alt="Artifici" width="120" height="25" loading="lazy" class="hidden dark:block">
+        <p class="mt-4 max-w-xs text-primary-700 dark:text-primary-200">Intelligence artificielle appliquée et aide à la décision collaborative.</p>
+        <p class="mt-2 text-primary-600 dark:text-primary-300">Québec, Canada</p>
+      </div>
+      <nav aria-label="Navigation">
+        <h2 class="font-semibold">Navigation</h2>
+        <ul class="mt-4 space-y-2 text-primary-700 dark:text-primary-200">
+          <li><a href="/#entreprise" class="hover:text-primary-500 dark:hover:text-white">L’entreprise</a></li>
+          <li><a href="/#produit" class="hover:text-primary-500 dark:hover:text-white">Produit</a></li>
+          <li><a href="/#services" class="hover:text-primary-500 dark:hover:text-white">Services</a></li>
+          <li><a href="/#equipe" class="hover:text-primary-500 dark:hover:text-white">L’équipe</a></li>
+          <li><a href="/blogue/" class="hover:text-primary-500 dark:hover:text-white">Blogue</a></li>
+          <li><a href="/#contact" class="hover:text-primary-500 dark:hover:text-white">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="font-semibold">Suivre Artifici</h2>
+        <ul class="mt-4 space-y-2 text-primary-700 dark:text-primary-200">
+          <li><a href="https://www.linkedin.com/company/artifici" target="_blank" rel="noopener noreferrer" class="hover:text-primary-500 dark:hover:text-white">LinkedIn<span class="sr-only"> (s’ouvre dans un nouvel onglet)</span></a></li>
+          <li><a href="https://github.com/ArtificiAI" target="_blank" rel="noopener noreferrer" class="hover:text-primary-500 dark:hover:text-white">GitHub<span class="sr-only"> (s’ouvre dans un nouvel onglet)</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-primary-100 dark:border-primary-800">
+      <div
+        class="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-6 text-sm text-primary-600 dark:text-primary-300 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
+        <p>© 2026 Les Services en ligne Artifici inc. Tous droits réservés.</p>
+        <ul class="flex flex-wrap gap-x-6 gap-y-2">
+          <li><a href="/confidentialite/" class="hover:text-primary-500 dark:hover:text-white">Politique de confidentialité</a></li>
+          <li><button type="button" data-cookie-settings class="hover:text-primary-500 dark:hover:text-white">Gérer les cookies</button></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+
+      var themeButton = document.getElementById('theme-toggle');
+      function syncTheme() { themeButton.setAttribute('aria-pressed', String(root.classList.contains('dark'))); }
+      syncTheme();
+      themeButton.addEventListener('click', function () {
+        root.classList.toggle('dark');
+        try { localStorage.theme = root.classList.contains('dark') ? 'dark' : 'light'; } catch (e) {}
+        syncTheme();
+      });
+
+      var menuButton = document.getElementById('menu-button');
+      var menu = document.getElementById('mobile-menu');
+      function setMenu(open) {
+        menu.classList.toggle('hidden', !open);
+        menuButton.setAttribute('aria-expanded', String(open));
+      }
+      menuButton.addEventListener('click', function () {
+        setMenu(menuButton.getAttribute('aria-expanded') !== 'true');
+      });
+      menu.addEventListener('click', function (event) {
+        if (event.target.closest('a')) setMenu(false);
+      });
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
+          setMenu(false);
+          menuButton.focus();
+        }
+      });
+
+      document.querySelectorAll('[data-lang]').forEach(function (link) {
+        link.addEventListener('click', function () {
+          try { localStorage.lang = link.getAttribute('data-lang'); } catch (e) {}
+        });
+      });
+
+      document.querySelectorAll('[data-cookie-settings]').forEach(function (button) {
+        button.addEventListener('click', function () {
+          if (typeof window.openAxeptioCookies === 'function') window.openAxeptioCookies();
+        });
+      });
+    })();
+  </script>
+</body>
+
+</html>

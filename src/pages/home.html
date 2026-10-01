@@ -1,0 +1,258 @@
+    <section
+      class="relative isolate overflow-hidden bg-gradient-to-b from-primary-50 to-white dark:from-primary-800 dark:to-primary-900">
+      <div aria-hidden="true"
+        class="absolute -right-32 -top-40 -z-10 h-[28rem] w-[28rem] rounded-full bg-amber-200/40 blur-3xl dark:bg-primary-400/15">
+      </div>
+      <div
+        class="mx-auto grid max-w-6xl items-center gap-14 px-4 py-16 sm:px-6 md:py-24 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
+        <div>
+          <ul
+            class="flex flex-wrap gap-x-2 gap-y-1 text-sm font-semibold uppercase tracking-wider text-primary-600 dark:text-primary-200">
+{{{heroTags}}}
+          </ul>
+          <h1
+            class="mt-4 text-4xl font-extrabold leading-[1.1] tracking-tight text-primary-800 dark:text-primary-50 sm:text-5xl xl:text-6xl">
+            {{{heroTitleHtml}}}</h1>
+          <p class="mt-6 max-w-xl text-lg leading-relaxed text-primary-700 dark:text-primary-200 md:text-xl">
+            {{heroSubtitle}}</p>
+          <div class="mt-10 flex flex-col gap-3 sm:flex-row">
+            <a href="#produit" class="btn-primary">{{heroCtaPrimary}}</a>
+            <a href="#contact" class="btn-secondary">{{heroCtaSecondary}}</a>
+          </div>
+        </div>
+
+        <div aria-hidden="true" class="hidden lg:block">
+          <svg viewBox="0 0 520 440" class="h-auto w-full" fill="none">
+            <symbol id="bulle" viewBox="0 0 64 50">
+              <path fill="currentColor" style="stroke: var(--bulle-contour)" stroke-width="1.5" d="M10 1h44a9 9 0 0 1 9 9v22a9 9 0 0 1-9 9H22l-12 8v-8a9 9 0 0 1-9-9V10a9 9 0 0 1 9-9Z" />
+              <rect x="12" y="13" width="36" height="5" rx="2.5" style="fill: var(--bulle-contour)" />
+              <rect x="12" y="24" width="24" height="5" rx="2.5" style="fill: var(--bulle-contour)" />
+            </symbol>
+            <g class="stroke-primary-200 dark:stroke-primary-700" stroke-width="1.5">
+              <path d="M88 57C158 57 215 120 285 120" />
+              <path d="M88 57C158 57 230 215 300 215" />
+              <path d="M169 113C239 113 215 120 285 120" />
+              <path d="M84 192C154 192 230 215 300 215" />
+              <path d="M84 192C154 192 210 305 280 305" />
+              <path d="M180 254C250 254 230 215 300 215" />
+              <path d="M180 254C250 254 210 305 280 305" />
+              <path d="M94 339C164 339 210 305 280 305" />
+            </g>
+            <g stroke-width="2.5" stroke-linecap="round">
+              <path class="stroke-primary-500/60 dark:stroke-primary-300/60" d="M285 120C345 120 324 215 384 215" />
+              <path class="stroke-amber-500/60 dark:stroke-amber-400/60" d="M300 215C360 215 324 215 384 215" />
+              <path class="stroke-primary-400/60 dark:stroke-primary-200/60" d="M280 305C340 305 324 215 384 215" />
+            </g>
+            <g class="text-white [--bulle-contour:theme(colors.primary.200)] dark:text-primary-800 dark:[--bulle-contour:theme(colors.primary.600)]">
+              <use href="#bulle" x="24" y="36" width="64" height="50" />
+              <use href="#bulle" x="118" y="96" width="51" height="40" />
+              <use href="#bulle" x="10" y="168" width="74" height="57" />
+              <use href="#bulle" x="126" y="236" width="54" height="42" />
+              <use href="#bulle" x="30" y="318" width="64" height="50" />
+            </g>
+            <circle cx="285" cy="120" r="20" class="fill-primary-500/15 dark:fill-primary-300/20" />
+            <circle cx="285" cy="120" r="10" class="fill-primary-500 dark:fill-primary-300" />
+            <circle cx="300" cy="215" r="20" class="fill-amber-500/15 dark:fill-amber-400/20" />
+            <circle cx="300" cy="215" r="10" class="fill-amber-500 dark:fill-amber-400" />
+            <circle cx="280" cy="305" r="20" class="fill-primary-400/15 dark:fill-primary-200/20" />
+            <circle cx="280" cy="305" r="10" class="fill-primary-400 dark:fill-primary-200" />
+            <circle cx="440" cy="215" r="56" stroke-width="1.5" stroke-dasharray="4 6" class="stroke-amber-400 dark:stroke-amber-400/50" />
+            <circle cx="440" cy="215" r="40" class="fill-amber-400" />
+            <path d="M424 216l11 11 21-24" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" class="stroke-primary-900" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="entreprise" class="mx-auto max-w-6xl px-4 py-20 sm:px-6 md:py-28 lg:px-8">
+      <div class="grid gap-12 lg:grid-cols-2 lg:gap-16">
+        <div>
+          <h2 class="section-title">{{companyTitle}}</h2>
+          <p class="lead mt-6 max-w-xl">{{companyBody}}</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">{{whyTitle}}</h3>
+          <ol class="mt-6 divide-y divide-primary-100 border-y border-primary-100 dark:divide-primary-800 dark:border-primary-800">
+            <li class="flex gap-5 py-6">
+              <span aria-hidden="true" class="text-sm font-bold tabular-nums text-accent">01</span>
+              <div>
+                <h4 class="text-lg font-semibold">{{why1}}</h4>
+                <p class="mt-1 text-primary-600 dark:text-primary-300">{{why1d}}</p>
+              </div>
+            </li>
+            <li class="flex gap-5 py-6">
+              <span aria-hidden="true" class="text-sm font-bold tabular-nums text-accent">02</span>
+              <div>
+                <h4 class="text-lg font-semibold">{{why2}}</h4>
+                <p class="mt-1 text-primary-600 dark:text-primary-300">{{why2d}}</p>
+              </div>
+            </li>
+            <li class="flex gap-5 py-6">
+              <span aria-hidden="true" class="text-sm font-bold tabular-nums text-accent">03</span>
+              <div>
+                <h4 class="text-lg font-semibold">{{why3}}</h4>
+                <p class="mt-1 text-primary-600 dark:text-primary-300">{{why3d}}</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="produit" class="bg-primary-50 dark:bg-primary-800">
+      <div class="mx-auto max-w-6xl px-4 py-20 sm:px-6 md:py-28 lg:px-8">
+        <div class="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+          <div class="max-w-2xl">
+            <h2 class="section-title">{{productTitle}}</h2>
+            <p
+              class="mt-5 inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-sm font-medium text-primary-700 ring-1 ring-primary-100 dark:bg-primary-900 dark:text-primary-200 dark:ring-primary-700">
+              <span aria-hidden="true" class="h-2 w-2 rounded-full bg-emerald-500"></span>{{productStatus}}
+            </p>
+            <p class="lead mt-5">{{productBody}}</p>
+          </div>
+          <a href="{{formUrl}}" target="_blank" rel="noopener noreferrer" class="btn-primary shrink-0 self-start lg:self-auto">
+            {{productCta}}
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M9 7h8v8" />
+            </svg>
+            <span class="sr-only">{{newTab}}</span>
+          </a>
+        </div>
+
+        <div
+          class="mt-12 grid overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-primary-100 dark:bg-primary-900 dark:ring-primary-700 md:grid-cols-3">
+          <div class="p-7 lg:p-8">
+            <h3 class="text-xl font-bold text-primary-800 dark:text-primary-50">{{benefit1}}</h3>
+            <ul class="mt-5 space-y-3 text-primary-700 dark:text-primary-200">
+              <li class="flex gap-3"><svg class="mt-1 h-4 w-4 shrink-0 text-primary-500 dark:text-primary-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>{{benefit1a}}</li>
+              <li class="flex gap-3"><svg class="mt-1 h-4 w-4 shrink-0 text-primary-500 dark:text-primary-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>{{benefit1b}}</li>
+              <li class="flex gap-3"><svg class="mt-1 h-4 w-4 shrink-0 text-primary-500 dark:text-primary-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>{{benefit1c}}</li>
+            </ul>
+          </div>
+          <div class="border-t border-primary-100 p-7 dark:border-primary-700 md:border-l md:border-t-0 lg:p-8">
+            <h3 class="text-xl font-bold text-primary-800 dark:text-primary-50">{{benefit2}}</h3>
+            <ul class="mt-5 space-y-3 text-primary-700 dark:text-primary-200">
+              <li class="flex gap-3"><svg class="mt-1 h-4 w-4 shrink-0 text-primary-500 dark:text-primary-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>{{benefit2a}}</li>
+              <li class="flex gap-3"><svg class="mt-1 h-4 w-4 shrink-0 text-primary-500 dark:text-primary-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>{{benefit2b}}</li>
+              <li class="flex gap-3"><svg class="mt-1 h-4 w-4 shrink-0 text-primary-500 dark:text-primary-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>{{benefit2c}}</li>
+            </ul>
+          </div>
+          <div class="border-t border-primary-100 p-7 dark:border-primary-700 md:border-l md:border-t-0 lg:p-8">
+            <h3 class="text-xl font-bold text-primary-800 dark:text-primary-50">{{benefit3}}</h3>
+            <ul class="mt-5 space-y-3 text-primary-700 dark:text-primary-200">
+              <li class="flex gap-3"><svg class="mt-1 h-4 w-4 shrink-0 text-primary-500 dark:text-primary-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>{{benefit3a}}</li>
+              <li class="flex gap-3"><svg class="mt-1 h-4 w-4 shrink-0 text-primary-500 dark:text-primary-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>{{benefit3b}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="mx-auto max-w-6xl px-4 py-20 sm:px-6 md:py-28 lg:px-8">
+      <div class="max-w-2xl">
+        <h2 class="section-title">{{servicesTitle}}</h2>
+        <p class="lead mt-6">{{servicesBody}}</p>
+      </div>
+      <ol class="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+        <li
+          class="relative lg:after:absolute lg:after:-right-8 lg:after:left-14 lg:after:top-5 lg:after:h-px lg:after:bg-primary-200 dark:lg:after:bg-primary-700">
+          <span aria-hidden="true"
+            class="flex h-10 w-10 items-center justify-center rounded-full bg-primary-500 font-semibold text-white">1</span>
+          <h3 class="mt-5 text-lg font-semibold">{{service1}}</h3>
+          <p class="mt-2 text-primary-600 dark:text-primary-300">{{service1d}}</p>
+        </li>
+        <li
+          class="relative lg:after:absolute lg:after:-right-8 lg:after:left-14 lg:after:top-5 lg:after:h-px lg:after:bg-primary-200 dark:lg:after:bg-primary-700">
+          <span aria-hidden="true"
+            class="flex h-10 w-10 items-center justify-center rounded-full bg-primary-500 font-semibold text-white">2</span>
+          <h3 class="mt-5 text-lg font-semibold">{{service2}}</h3>
+          <p class="mt-2 text-primary-600 dark:text-primary-300">{{service2d}}</p>
+        </li>
+        <li
+          class="relative lg:after:absolute lg:after:-right-8 lg:after:left-14 lg:after:top-5 lg:after:h-px lg:after:bg-primary-200 dark:lg:after:bg-primary-700">
+          <span aria-hidden="true"
+            class="flex h-10 w-10 items-center justify-center rounded-full bg-primary-500 font-semibold text-white">3</span>
+          <h3 class="mt-5 text-lg font-semibold">{{service3}}</h3>
+          <p class="mt-2 text-primary-600 dark:text-primary-300">{{service3d}}</p>
+        </li>
+        <li>
+          <span aria-hidden="true"
+            class="flex h-10 w-10 items-center justify-center rounded-full bg-primary-500 font-semibold text-white">4</span>
+          <h3 class="mt-5 text-lg font-semibold">{{service4}}</h3>
+          <p class="mt-2 text-primary-600 dark:text-primary-300">{{service4d}}</p>
+        </li>
+      </ol>
+      <div class="mt-14">
+        <a href="#contact" class="btn-primary">{{servicesCta}}</a>
+      </div>
+    </section>
+
+    <section id="equipe" class="bg-primary-50 dark:bg-primary-800">
+      <div class="mx-auto max-w-6xl px-4 py-20 sm:px-6 md:py-28 lg:px-8">
+        <div class="max-w-2xl">
+          <h2 class="section-title">{{teamTitle}}</h2>
+          <p class="lead mt-6">{{teamBody}}</p>
+        </div>
+
+        <ul class="mt-12 grid gap-6 sm:grid-cols-3">
+          <li class="rounded-2xl bg-white p-6 ring-1 ring-primary-100 dark:bg-primary-900 dark:ring-primary-700">
+            <p class="text-lg font-bold">Francis Couture</p>
+            <p class="mt-1 text-primary-600 dark:text-primary-300">{{role1}}</p>
+          </li>
+          <li class="rounded-2xl bg-white p-6 ring-1 ring-primary-100 dark:bg-primary-900 dark:ring-primary-700">
+            <p class="text-lg font-bold">Mikaël Gélinas, M. Sc.</p>
+            <p class="mt-1 text-primary-600 dark:text-primary-300">{{role2}}</p>
+          </li>
+          <li class="rounded-2xl bg-white p-6 ring-1 ring-primary-100 dark:bg-primary-900 dark:ring-primary-700">
+            <p class="text-lg font-bold">Olivier Bloch, M. Sc.</p>
+            <p class="mt-1 text-primary-600 dark:text-primary-300">{{role3}}</p>
+          </li>
+        </ul>
+
+        <div
+          class="mt-8 flex flex-col gap-6 rounded-2xl border border-dashed border-primary-200 p-6 dark:border-primary-600 sm:p-8 lg:flex-row lg:items-center lg:justify-between">
+          <div class="max-w-2xl">
+            <h3 class="text-xl font-bold">{{teamMultiTitle}}</h3>
+            <p class="mt-2 text-primary-700 dark:text-primary-200">{{teamMultiBody}}</p>
+          </div>
+          <a href="{{formUrl}}" target="_blank" rel="noopener noreferrer" class="btn-secondary shrink-0 self-start lg:self-auto">
+            {{teamMultiCta}}
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M9 7h8v8" />
+            </svg>
+            <span class="sr-only">{{newTab}}</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="bg-primary-900 text-white dark:bg-primary-950">
+      <div class="mx-auto max-w-6xl px-4 py-20 sm:px-6 md:py-24 lg:px-8">
+        <div class="flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between">
+          <div class="max-w-2xl">
+            <h2 class="section-title">{{contactTitle}}</h2>
+            <p class="mt-6 text-lg leading-relaxed text-primary-100">{{contactBody}}</p>
+            <p class="mt-6 text-sm text-primary-200">{{contactPrivacyNote}}
+              <a href="{{privacyUrl}}" class="underline underline-offset-2 hover:text-white">{{contactPrivacyLink}}</a>.</p>
+          </div>
+          <div class="flex shrink-0 flex-col gap-4 sm:flex-row sm:items-center lg:flex-col lg:items-stretch">
+            <a href="{{formUrl}}" target="_blank" rel="noopener noreferrer"
+              class="btn bg-amber-400 text-primary-900 shadow-lg shadow-black/20 hover:bg-amber-300">
+              {{contactCta}}
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M9 7h8v8" />
+              </svg>
+              <span class="sr-only">{{newTab}}</span>
+            </a>
+            <a href="{{linkedinUrl}}" target="_blank" rel="noopener noreferrer"
+              class="btn border border-primary-600 text-white hover:bg-primary-800">
+              {{contactLinkedin}}
+              <span class="sr-only">{{newTab}}</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>

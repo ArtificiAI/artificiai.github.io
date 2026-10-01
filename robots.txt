@@ -1,0 +1,25 @@
+# Artifici — https://artifici.ai
+# Tout le site est public et peut être exploré.
+
+User-agent: *
+Allow: /
+
+# Moteurs de réponse IA, autorisés explicitement pour que le site puisse être cité.
+# Recherche / réponses : OAI-SearchBot, ChatGPT-User, Claude-SearchBot, Claude-User, PerplexityBot, Perplexity-User
+# Entraînement de modèles : GPTBot, ClaudeBot, Google-Extended, Applebot-Extended
+# (pour refuser l’entraînement tout en restant cité, remplacer « Allow: / » par « Disallow: / » pour ce second groupe).
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://artifici.ai/sitemap.xml

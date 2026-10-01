@@ -1,0 +1,19 @@
+{
+  "name": "artificiai.github.io",
+  "private": true,
+  "type": "module",
+  "description": "Site public d’Artifici (artifici.ai) — pages FR/EN et blogue générés à partir de src/.",
+  "scripts": {
+    "build:css": "tailwindcss -i src/styles.css -o assets/site.css --minify",
+    "build:html": "node scripts/build.js",
+    "build": "npm run build:css && npm run build:html",
+    "apercu": "npm run build:css && node scripts/apercu.js",
+    "test": "node --test scripts/tests/blog.test.js"
+  },
+  "devDependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "gray-matter": "^4.0.3",
+    "marked": "^15.0.12",
+    "tailwindcss": "^3.4.19"
+  }
+}
