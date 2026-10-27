@@ -5,8 +5,12 @@
 const FORM_URL =
   'https://forms.office.com/Pages/ResponsePage.aspx?id=WnCDb8h7N0iDQf3lxLt-ZJmnwjJlQ-FKgwnmMO-pVm9UREtBUklOVjJONjFDWlQxVjNURUZFWDVPTS4u';
 
+// Landing page Argumently hébergée sur HubSpot (français seulement)
+const ARGUMENTLY_URL = 'https://342965519.hs-sites-na3.com/fr-ca/argumently';
+
 const shared = {
   formUrl: FORM_URL,
+  argumentlyUrl: ARGUMENTLY_URL,
   linkedinUrl: 'https://www.linkedin.com/company/artifici',
   githubUrl: 'https://github.com/ArtificiAI',
 };
@@ -81,7 +85,7 @@ export default {
     benefit3: 'Décisions traçables et historiques',
     benefit3a: 'Traçabilité des décisions',
     benefit3b: 'Historisation des décisions',
-    productCta: 'Échanger sur la plateforme',
+    productCta: 'Découvrir Argumently',
 
     servicesTitle: 'Services-conseil en IA et NLP',
     servicesBody:
@@ -215,7 +219,7 @@ export default {
     benefit3: 'Traceable and documented decisions',
     benefit3a: 'Decision traceability',
     benefit3b: 'Decision history preserved',
-    productCta: 'Talk to us about the platform',
+    productCta: 'Discover Argumently',
 
     servicesTitle: 'AI and NLP consulting',
     servicesBody:
